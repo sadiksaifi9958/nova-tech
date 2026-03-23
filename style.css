@@ -303,11 +303,11 @@ nav a:hover {
 .footer {
     border-top: 1px solid lightgray;
     display: flex;
-    padding: 4rem 0;
+    padding: 4rem 1rem;
     justify-content:center;
     gap: 8rem;
 }
-
+ 
 
 .logo-description-socials {
     width: 20%;
@@ -403,7 +403,7 @@ nav a:hover {
     outline: none;
     margin-bottom: 1rem;
     font-size: 0.7rem;
-    color: black;
+    color: #64748B;
 }
 
 .newsletter-in-footer button {
