@@ -397,23 +397,23 @@ nav a:hover {
 
 .newsletter-in-footer input {
     height: 2rem;
-    width: 15rem;
+    width: 12rem;
     padding: 0.3rem;
-    background-color: antiquewhite;
-    border-radius: 12px;
-    border: none;
+    background-color: white;
+    border-radius: 8px;
+    border: 1px solid lightgrey;
     outline: none;
     margin-bottom: 1rem;
     font-size: 0.7rem;
-    color: crimson;
+    color: black;
 }
 
 .newsletter-in-footer button {
-    padding: 0.3rem;
-    background-color: aliceblue;
-    color: cornflowerblue;
+    padding: 0.4rem;
+    background-color: blue;
+    color: white;
     font-size: 0.7rem;
-    border-radius: 12px;
+    border-radius: 10px;
     border: 2px solid aliceblue;
     margin-bottom: 1rem;
 }
@@ -454,11 +454,12 @@ nav a:hover {
     .footer {
         flex-direction: column;
         gap: 3rem;
+        padding: 2rem;
     }
 
     .logo-description-socials,
     .newsletter-in-footer {
-        width: auto;
+        width: 65%;
     }
 
     .quick-links {
