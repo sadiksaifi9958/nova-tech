@@ -585,6 +585,51 @@ nav a:hover {
     border-color: black;
 }
 
+.testimonials-headings {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.testimonials-section h2 {
+    font-size: 1rem;
+    color: blue;
+}
+
+.testimonials-section h1 {
+    font-size: 1.5rem;
+}
+
+.testimonials-para {
+    font-size: 1rem;
+    color: #64748B;
+}
+
+.testimonials-cards {
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.card-in-testimonials {
+    width: 20%;
+    padding: 2rem;
+    border: 1px solid lightgrey;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.para-in-testimonials-card {
+    color: #64748B;
+    border-bottom: 1px solid lightgrey;
+    padding: 1rem 0;
+}
+
+
 @media(max-width: 768px) {
     nav button {
         font-size: 1rem;
