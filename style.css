@@ -601,6 +601,7 @@ nav a:hover {
 .testimonials-para {
     font-size: 1rem;
     color: #64748B;
+    text-align: center;
 }
 
 .testimonials-cards {
@@ -819,4 +820,15 @@ nav a:hover {
     .pricing-page-headings {
         padding: 5rem 2rem;
     }
+
+    .testimonials-cards {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .testimonials-para {
+        padding: 0 2.5rem;
+    }
+
+
 }
