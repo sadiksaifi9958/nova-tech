@@ -596,6 +596,7 @@ nav a:hover {
 
 .testimonials-section h1 {
     font-size: 1.5rem;
+    color: #0F172A;
 }
 
 .testimonials-para {
@@ -655,6 +656,39 @@ nav a:hover {
 
 .stars {
     color: #FBBF24;
+}
+
+.cta-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    padding: 5rem 0;
+}
+
+.cta-section h2 {
+    color: blue;
+    font-size: 1rem;
+}
+
+.cta-section h1 {
+    font-size: 1.5rem;
+    color: #0F172A;
+}
+
+.cta-section p {
+    color: #64748B;
+    font-size: 1rem;
+}
+
+.cta-section button {
+    color: white;
+    background-color: blue;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border-radius: 12px;
+    border: 1px solid blue;
+    outline: none;
 }
 
 @media(max-width: 768px) {
@@ -829,6 +863,4 @@ nav a:hover {
     .testimonials-para {
         padding: 0 2.5rem;
     }
-
-
 }
