@@ -610,7 +610,7 @@ nav a:hover {
     display: flex;
     gap: 8rem;
     justify-content: center;
-    padding: 2rem;
+    padding: 5rem 2rem;
 }
 
 .card-in-testimonials {
