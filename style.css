@@ -629,8 +629,33 @@ nav a:hover {
     padding: 1rem 0;
 }
 
+.avatar {
+    text-align: center;
+    color: blue;
+    font-size: 1rem;
+    border-right: 1px solid lightgrey;
+    border-radius: 50%;
+    background-color: aqua;
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-@media(max-width: 768px) {
+.testimonial-author {
+    display: flex;
+    font-size: 1rem;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.author-role {
+    color: #64748B;
+}
+
+. @media(max-width: 768px) {
     nav button {
         font-size: 1rem;
     }
