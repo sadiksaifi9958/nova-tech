@@ -648,7 +648,7 @@ nav a:hover {
     display: flex;
     font-size: 1rem;
     gap: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
 }
 
 .author-role {
