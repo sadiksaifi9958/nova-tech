@@ -691,6 +691,74 @@ nav a:hover {
     outline: none;
 }
 
+#contact-form {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem 0;
+    gap: 2rem;
+}
+
+#contact-form-group h1 {
+    font-size: 1.5rem;
+    color: #0F172A;
+}
+
+#contact-form-group p {
+    font-size: 1rem;
+    color: #64748B;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+
+#contact-form-group {
+    background-color: white;
+    border-radius: 12px;
+    border: 1px solid #F2EEE2;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 600px;
+    max-width: 600px;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+
+.input-group {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+.input-group input {
+    font-size: 1rem;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    outline: none;
+    padding: 0.6rem;
+}
+
+.input-group textarea {
+    resize: none;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    font-size: 1rem;
+    padding: 0.6rem;
+}
+
+#contact-form-group button {
+    background-color: black;
+    color: white;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+
 @media(max-width: 768px) {
     nav button {
         font-size: 1rem;
