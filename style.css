@@ -689,6 +689,11 @@ nav a:hover {
     border-radius: 12px;
     border: 1px solid blue;
     outline: none;
+    cursor: pointer;
+}
+
+.cta-section button:active {
+    opacity: 0.6;
 }
 
 #modal-overlay {
@@ -804,8 +809,12 @@ nav a:hover {
     padding: 0.5rem;
     border: 1px solid black;
     border-radius: 10px;
+    cursor: pointer;
 }
 
+#submit:active: {
+    opacity: 0.6;
+}
 
 @media(max-width: 768px) {
     nav button {

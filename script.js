@@ -38,4 +38,9 @@ closeBtn.addEventListener("click",
         modal.classList.remove("get-started");
     }
 );
-console.log(closeBtn);
+
+let modalForm = document.querySelector("#modal-form");
+
+modalForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+});
