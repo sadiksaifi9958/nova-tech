@@ -693,15 +693,17 @@ nav a:hover {
 
 #modal-overlay {
     background-color: lightgrey;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
     z-index: 1000;
+    padding: 2rem;
 }
 
 .modal-box {
@@ -717,7 +719,12 @@ nav a:hover {
 }
 
 .modal-header {
-    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-headings {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -732,6 +739,23 @@ nav a:hover {
     font-size: 1rem;
     color: #64748B;
 }
+
+.close-button {
+    border: none;
+    border-radius: 50%;
+    color: black;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-button:hover {
+    opacity: 1;
+}
+
 
 .input-group {
     height: auto;
@@ -756,6 +780,12 @@ nav a:hover {
     padding: 0.6rem;
 }
 
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: blue;
+    outline: 3px solid aqua;
+}
+
 .input-group textarea {
     resize: none;
     border: 1px solid lightgrey;
@@ -764,7 +794,7 @@ nav a:hover {
     padding: 0.6rem;
 }
 
-.modal-box button {
+#submit {
     background-color: black;
     color: white;
     padding: 0.5rem;
