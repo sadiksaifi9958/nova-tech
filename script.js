@@ -30,3 +30,12 @@ getStartedButton.forEach(function (btn) {
         modal.classList.toggle("get-started")
     });
 });
+
+let closeBtn = document.querySelector(".contact-form-close-button");
+
+closeBtn.addEventListener("click",
+    function () {
+        modal.classList.remove("get-started");
+    }
+);
+console.log(closeBtn);

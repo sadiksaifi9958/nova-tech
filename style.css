@@ -744,7 +744,7 @@ nav a:hover {
     color: #64748B;
 }
 
-.close-button {
+.contact-form-close-button {
     border: none;
     border-radius: 50%;
     color: black;
@@ -756,7 +756,7 @@ nav a:hover {
     align-items: center;
 }
 
-.close-button:hover {
+.contact-form-close-button:hover {
     opacity: 1;
 }
 
