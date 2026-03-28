@@ -692,8 +692,8 @@ nav a:hover {
 }
 
 #modal-overlay {
-    background-color: lightgrey;
-    display: flex;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -704,6 +704,10 @@ nav a:hover {
     width: 100%;
     z-index: 1000;
     padding: 2rem;
+}
+
+#modal-overlay.get-started {
+    display: flex;
 }
 
 .modal-box {
