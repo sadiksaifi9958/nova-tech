@@ -122,9 +122,9 @@ nav a:hover {
     font-size: 1.1rem;
     padding: 0.7rem 1.5rem;
     background-color: white;
-    color: blue;
+    color: black;
     border-radius: 12px;
-    border: 2px solid blue;
+    border: 2px solid black;
     outline: none;
     cursor: pointer;
 }
