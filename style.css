@@ -674,11 +674,13 @@ nav a:hover {
 .cta-section h1 {
     font-size: 1.5rem;
     color: #0F172A;
+    text-align:center;
 }
 
 .cta-section p {
     color: #64748B;
     font-size: 1rem;
+    text-align:center;
 }
 
 .cta-section button {
@@ -730,7 +732,7 @@ nav a:hover {
 .modal-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .modal-headings {
@@ -759,6 +761,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: white;
 }
 
 .contact-form-close-button:hover {
@@ -812,7 +815,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-#submit:active: {
+#submit:active{
     opacity: 0.6;
 }
 
@@ -987,5 +990,25 @@ nav a:hover {
 
     .testimonials-para {
         padding: 0 2.5rem;
+    }
+    .modal-box{
+        max-width: 325px;
+        padding: 1.5rem;
+    }
+
+    .modal-header h1{
+        font-size: 1.4rem;
+    }
+    
+    .modal-header p{
+        font-size: 0.9rem;
+    }
+
+    .input-group label{
+        font-size: 0.9rem;
+    }
+
+    #modal-form{
+        gap: 0.5rem;
     }
 }
