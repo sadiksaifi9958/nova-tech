@@ -934,14 +934,13 @@ nav a:hover {
     .footer {
         flex-direction: column;
         gap: 3rem;
-        padding-left: 4rem;
     }
 
     .logo-description-socials,
     .newsletter-in-footer {
         width: 65%;
     }
-
+    
     .quick-links {
         justify-content: flex-start;
     }
@@ -987,7 +986,7 @@ nav a:hover {
 
     .testimonials-cards {
         flex-direction: column;
-        gap: 4rem;
+        gap: 3rem;
     }
 
     .testimonials-para {
@@ -1012,5 +1011,9 @@ nav a:hover {
 
     #modal-form{
         gap: 0.5rem;
+    }
+
+    .cta-section{
+        padding: 7rem 0;
     }
 }
