@@ -75,7 +75,6 @@ nav a:hover {
 
 .hero-section {
     width: 100%;
-    position: relative;
     background-color: white;
     min-height: 70vh;
     width: 100%;
@@ -83,7 +82,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 4rem 15%;
+    padding: 10rem 15%;
     margin-bottom: 3rem;
 }
 
@@ -217,7 +216,7 @@ nav a:hover {
 .footer {
     border-top: 1px solid lightgray;
     display: flex;
-    padding: 4rem 1rem;
+    padding: 7rem 1rem;
     justify-content: center;
     gap: 8rem;
 }
@@ -663,9 +662,9 @@ nav a:hover {
 .cta-section {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
     align-items: center;
-    padding: 5rem 0;
+    padding: 8rem 0;
 }
 
 .cta-section h2 {
