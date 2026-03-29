@@ -607,9 +607,10 @@ nav a:hover {
 
 .testimonials-cards {
     display: flex;
-    gap: 8rem;
-    justify-content: center;
     padding: 4rem 2rem;
+    justify-content: center;
+    justify-content:space-evenly;
+    align-items:center;
 }
 
 .card-in-testimonials {
@@ -617,10 +618,10 @@ nav a:hover {
     border: 1px solid lightgrey;
     border-radius: 12px;
     display: flex;
-    flex: 1;
     flex-direction: column;
     align-items: flex-start;
     background-color:floralwhite;
+    width: 19rem;
 }
 
 .para-in-testimonials-card {
@@ -662,9 +663,9 @@ nav a:hover {
 .cta-section {
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
     align-items: center;
-    padding: 8rem 0;
+    padding: 12rem 0;
 }
 
 .cta-section h2 {
