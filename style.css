@@ -16,6 +16,11 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+body.dark {
+    background-color: #0F172A;
+    color: white;
+}
+
 .logo {
     width: 10rem;
     height: auto;
@@ -24,17 +29,15 @@ body {
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     border-bottom: 1px solid lightgrey;
-
     position: sticky;
     top: 0;
     z-index: 100;
-    background: white;
     padding-top: 0.3rem;
     padding-bottom: 0;
     padding-right: 1rem;
     padding-left: 1rem;
+    gap: 3rem;
 }
 
 nav {
@@ -44,7 +47,37 @@ nav {
     font-size: 1rem;
 }
 
-nav button {
+.search-group {
+    display: flex;
+}
+
+.search-group input {
+    border: 1px solid lightgrey;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-right: none;
+    font-size: 1rem;
+    height: 2rem;
+    width: 200px;
+    color: black;
+    padding: 0.5rem;
+}
+
+.search-group button {
+    height: 2rem;
+    border: 1px solid lightgrey;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-left: none;
+    font-size: 1rem;
+    color: lightgrey;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.get-started-btn {
     margin-right: 0.5rem;
     padding: 0.5rem 1rem;
     background-color: blue;
@@ -54,6 +87,19 @@ nav button {
     outline: none;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.day-night-mode {
+    color: lightgrey;
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    height: 1rem;
+    width: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav button:active {

@@ -102,3 +102,10 @@ activeNav.forEach(function (link) {
         link.classList.add("active");
     }
 });
+
+let darkModeSwitch = document.querySelector(".day-night-mode");
+let body = document.querySelector("body");
+
+darkModeSwitch.addEventListener("click", function () {
+    body.classList.toggle("dark");
+});
