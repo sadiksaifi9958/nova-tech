@@ -93,3 +93,12 @@ let observer = new IntersectionObserver(function (entries) {
 revealElements.forEach(function (el) {
     observer.observe(el);
 });
+
+let activeNav = document.querySelectorAll(".nav-link");
+
+activeNav.forEach(function (link) {
+    let href = link.getAttribute("href");
+    if (window.location.pathname.includes(href)) {
+        link.classList.add("active");
+    }
+});
