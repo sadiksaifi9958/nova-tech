@@ -17,7 +17,7 @@ body {
 }
 
 .logo {
-    width: 15rem;
+    width: 10rem;
     height: auto;
 }
 
@@ -38,11 +38,10 @@ header {
 }
 
 nav {
-    display: flex;
     gap: 3rem;
     display: flex;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 nav button {
@@ -53,7 +52,7 @@ nav button {
     border-radius: 12px;
     border: 2px solid blue;
     outline: none;
-    font-size: 1.3rem;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -185,7 +184,7 @@ nav a:hover {
     cursor: pointer;
     border: 1px solid skyblue;
     padding: 3.5rem;
-    background-color:#EEF2FF;
+    background-color: #EEF2FF;
 }
 
 .card h2 {
@@ -609,8 +608,8 @@ nav a:hover {
     display: flex;
     padding: 4rem 2rem;
     justify-content: center;
-    justify-content:space-evenly;
-    align-items:center;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .card-in-testimonials {
@@ -620,7 +619,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color:floralwhite;
+    background-color: floralwhite;
     width: 19rem;
 }
 
@@ -676,13 +675,13 @@ nav a:hover {
 .cta-section h1 {
     font-size: 1.5rem;
     color: #0F172A;
-    text-align:center;
+    text-align: center;
 }
 
 .cta-section p {
     color: #64748B;
     font-size: 1rem;
-    text-align:center;
+    text-align: center;
 }
 
 .cta-section button {
@@ -817,7 +816,7 @@ nav a:hover {
     cursor: pointer;
 }
 
-#submit:active{
+#submit:active {
     opacity: 0.6;
 }
 
@@ -940,7 +939,7 @@ nav a:hover {
     .newsletter-in-footer {
         width: 65%;
     }
-    
+
     .quick-links {
         justify-content: flex-start;
     }
@@ -992,28 +991,29 @@ nav a:hover {
     .testimonials-para {
         padding: 0 2.5rem;
     }
-    .modal-box{
+
+    .modal-box {
         max-width: 325px;
         padding: 1.5rem;
     }
 
-    .modal-header h1{
+    .modal-header h1 {
         font-size: 1.4rem;
     }
-    
-    .modal-header p{
+
+    .modal-header p {
         font-size: 0.9rem;
     }
 
-    .input-group label{
+    .input-group label {
         font-size: 0.9rem;
     }
 
-    #modal-form{
+    #modal-form {
         gap: 0.5rem;
     }
 
-    .cta-section{
+    .cta-section {
         padding: 7rem 0;
     }
 }
