@@ -16,11 +16,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-body.dark {
-    background-color: #0F172A;
-    color: white;
-}
-
 .logo {
     width: 10rem;
     height: auto;
@@ -29,15 +24,13 @@ body.dark {
 header {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid lightgrey;
     position: sticky;
     top: 0;
     z-index: 100;
-    padding-top: 0.3rem;
-    padding-bottom: 0;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding: 1rem;
     gap: 3rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
 }
 
 nav {
@@ -49,32 +42,34 @@ nav {
 
 .search-group {
     display: flex;
+    border: 2px solid lightgrey;
+    border-radius: 10px;
+    padding: 0.2rem 0.5rem;
+
 }
 
 .search-group input {
-    border: 1px solid lightgrey;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-right: none;
+    border: none;
     font-size: 1rem;
     height: 2rem;
-    width: 200px;
+    width: 160px;
     color: black;
-    padding: 0.5rem;
+    outline: none;
+    color: lightgrey;
+}
+
+.search-group input:focus {
+    border-color: lightgrey;
 }
 
 .search-group button {
     height: 2rem;
-    border: 1px solid lightgrey;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    border-left: none;
-    font-size: 1rem;
+    border: none;
     color: lightgrey;
-    padding-right: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.3rem;
 }
 
 .get-started-btn {
@@ -91,7 +86,7 @@ nav {
 
 .day-night-mode {
     color: lightgrey;
-    border: 1px solid lightgrey;
+    border: 2px solid lightgrey;
     border-radius: 50%;
     padding: 1.2rem;
     font-size: 1.2rem;
@@ -879,6 +874,72 @@ nav a:hover {
 
 nav a.active {
     font-weight: 700;
+}
+
+body.dark {
+    background-color: #0D1117;
+    color: white;
+}
+
+body.dark header,
+body.dark .hero-section,
+body.dark .hero-section h1,
+body.dark .day-night-mode {
+    background-color: #0D1117;
+    color: white;
+}
+
+body.dark .feature-para,
+body.dark .feat-heading-2,
+body.dark .testimonials-headings p,
+body.dark .testimonials-headings h1,
+body.dark .cta-section p,
+body.dark .cta-section h1 {
+    color: white;
+}
+
+body.dark .hero-section p {
+    color: skyblue;
+}
+
+body.dark .hero-section #btn-2,
+body.dark .search-group input,
+body.dark .search-group button,
+body.dark .search-group {
+    background-color: #0D1117;
+    color: white;
+    border-color: white;
+    border-color: white;
+}
+
+body.dark .feature-section .card,
+body.dark .feature-section .card h2,
+body.dark .card-in-testimonials,
+body.dark .card-in-testimonials .author-name,
+body.dark .card-in-testimonials .avatar {
+    background-color: #161B22;
+    color: white;
+    border-color: #161B22;
+}
+
+body.dark .feature-section .card p {
+    color: skyblue;
+}
+
+body.dark .card-in-testimonials p,
+body.dark .footer,
+body.dark .logo-description-socials,
+body.dark .footer .quick-links h2,
+body.dark .footer .quick-links ul li a,
+body.dark .footer .quick-links ul,
+body.dark .contact-info-in-footer,
+body.dark .newsletter-in-footer,
+body.dark .copyright-and-policies-in-footer,
+body.dark .newsletter-in-footer input,
+body.dark .copyright-and-policies-in-footer .policies a {
+    background-color: #0D1117;
+    border-color: skyblue;
+    color: skyblue;
 }
 
 @media(max-width: 768px) {
