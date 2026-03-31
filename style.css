@@ -920,7 +920,9 @@ body.dark .feature-section .card,
 body.dark .feature-section .card h2,
 body.dark .card-in-testimonials,
 body.dark .card-in-testimonials .author-name,
-body.dark .card-in-testimonials .avatar {
+body.dark .card-in-testimonials .avatar,
+body.dark .who-we-are-section h1,
+body.dark .our-mission-section h1 {
     background-color: #161B22;
     color: white;
     border-color: #161B22;
@@ -940,7 +942,11 @@ body.dark .contact-info-in-footer,
 body.dark .newsletter-in-footer,
 body.dark .copyright-and-policies-in-footer,
 body.dark .newsletter-in-footer input,
-body.dark .copyright-and-policies-in-footer .policies a {
+body.dark .copyright-and-policies-in-footer .policies a,
+body.dark .who-we-are-section p,
+body.dark .stats-cards div p,
+body.dark .stats-cards div,
+body.dark .our-mission-section p {
     background-color: #0D1117;
     border-color: skyblue;
     color: skyblue;
