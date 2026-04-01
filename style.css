@@ -566,8 +566,6 @@ body.dark .price-card.selected-card button {
     border: 1px solid blue;
 }
 
-
-
 .selected-card {
     border: 1px solid blue;
 }
@@ -988,6 +986,20 @@ body.dark .price-card p {
 
 body.dark .day-night-mode {
     background-color: #0D1117;
+}
+
+body.dark .contact-inputs div {
+    border-color: #334155;
+}
+
+body.dark .contact-inputs div input,
+body.dark .contact-inputs div textarea {
+    background-color: transparent;
+    color: white;
+}
+
+body.dark .input-box label {
+    color: #CBD5E1;
 }
 
 
