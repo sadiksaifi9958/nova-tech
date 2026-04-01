@@ -106,6 +106,20 @@ activeNav.forEach(function (link) {
 let darkModeSwitch = document.querySelector(".day-night-mode");
 let body = document.querySelector("body");
 
+let savedTheme = localStorage.getItem("theme");
+
+
+if (savedTheme == "dark") {
+    body.classList.add("dark");
+}
+
 darkModeSwitch.addEventListener("click", function () {
     body.classList.toggle("dark");
+    if (body.classList.contains("dark")) {
+        localStorage.setItem("theme", "dark");
+    } else {
+        localStorage.setItem("theme", "light");
+    }
 });
+
+
