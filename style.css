@@ -16,9 +16,17 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.n-span {
+    color: white;
+    background-color: blue;
+    padding: 0.5rem;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+    font-size:
+}
+
 .logo {
-    width: 9rem;
-    height: auto;
+    font-size: 1rem;
 }
 
 header {
@@ -47,35 +55,46 @@ nav {
 
 .search-group {
     display: flex;
+    padding: 0.5rem;
     border: 1px solid #64748B;
-    border-radius: 10px;
-    padding: 0.2rem 0.5rem;
-
+    border-radius: 5px;
 }
 
-.search-group input {
-    border: none;
+
+.search-input {
+    display: flex;
     font-size: 1rem;
-    height: 2rem;
-    width: 160px;
-    color: black;
+    border: none;
     outline: none;
-    color: lightgrey;
+    color: #64748B;
+    border-radius: 5px;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: width 0.3s ease, opacity 0.3s ease;
 }
 
-.search-group input:focus {
+.visible-search-input {
+    display: flex;
+    width: 160px;
+    opacity: 1;
+}
+
+
+.search-input:focus {
     border-color: blue;
     outline: skyblue;
 }
 
-.search-group button {
-    height: 2rem;
-    border: none;
+.search-btn {
     color: #64748B;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 
 .get-started-btn {

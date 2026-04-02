@@ -131,48 +131,59 @@ let submitBtn = document.getElementById("submit")
 let error = document.querySelectorAll(".error");
 let successMsg = document.querySelector(".success-message");
 
-contactForm.addEventListener("submit",
-    function (event) {
-        event.preventDefault();
-        if (fullName.value === "") {
-            error[0].textContent = "full name is required"
-        } else {
-            error[0].textContent = "";
+
+if (contactForm) {
+    contactForm.addEventListener("submit",
+        function (event) {
+            event.preventDefault();
+            if (fullName.value === "") {
+                error[0].textContent = "full name is required"
+            } else {
+                error[0].textContent = "";
+            }
+
+            if (emailAddress.value === "") {
+                error[1].textContent = "email is required";
+            } else if ((!emailAddress.value.includes("@")) || (!emailAddress.value.includes("."))) {
+                error[1].textContent = "invalid email address";
+            } else {
+                error[1].textContent = "";
+            }
+
+            if (subject.value === "") {
+                error[2].textContent = "subject is required";
+            } else {
+                error[2].textContent = "";
+            }
+
+            if (message.value === "") {
+                error[3].textContent = "please write your message"
+            } else {
+                error[3].textContent = "";
+            }
+
+            let isValid = error[0].textContent === "" &&
+                error[1].textContent === "" &&
+                error[2].textContent === "" &&
+                error[3].textContent === "";
+
+            if (isValid) {
+                successMsg.textContent = "Message sent successfully!";
+                contactForm.reset();
+            } else {
+                successMsg.textContent = "";
+            }
+
         }
-
-        if (emailAddress.value === "") {
-            error[1].textContent = "email is required";
-        } else if ((!emailAddress.value.includes("@")) || (!emailAddress.value.includes("."))) {
-            error[1].textContent = "invalid email address";
-        } else {
-            error[1].textContent = "";
-        }
-
-        if (subject.value === "") {
-            error[2].textContent = "subject is required";
-        } else {
-            error[2].textContent = "";
-        }
-
-        if (message.value === "") {
-            error[3].textContent = "please write your message"
-        } else {
-            error[3].textContent = "";
-        }
-
-        let isValid = error[0].textContent === "" &&
-            error[1].textContent === "" &&
-            error[2].textContent === "" &&
-            error[3].textContent === "";
-
-        if (isValid) {
-            successMsg.textContent = "Message sent successfully!";
-            contactForm.reset();
-        } else {
-            successMsg.textContent = "";
-        }
-
-    }
-);
+    )
+};
 
 
+let searchBtn = document.querySelector(".search-btn");
+let searchInput = document.querySelector(".search-input");
+
+if (searchBtn) {
+    searchBtn.addEventListener("click", function () {
+        searchInput.classList.toggle("visible-search-input");
+    });
+}
