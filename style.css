@@ -282,12 +282,12 @@ nav a:hover {
     display: flex;
     padding: 7rem 1rem;
     justify-content: center;
-    gap: 8rem;
+    gap: 2rem;
 }
 
 
 .logo-description-socials {
-    width: 20%;
+    width: 12rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -337,12 +337,19 @@ nav a:hover {
 }
 
 .newsletter-in-footer {
-    width: 20%;
     display: flex;
     flex-direction: column;
     color: #64748B;
     gap: 1rem;
     font-size: 0.7rem;
+}
+
+.newsletter-in-footer p{
+    width: 12rem;
+}
+.newsletter-in-footer form{
+    display: flex;
+    flex-direction:column;
 }
 
 .newsletter-in-footer input {
