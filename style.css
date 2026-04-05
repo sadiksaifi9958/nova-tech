@@ -1144,7 +1144,7 @@ body.dark #submit {
         width: 35vh;
     }
 
-    .contact-inputs button {
+    .contact-inputs #contact-page-form button{
         width: 40vh;
     }
 
