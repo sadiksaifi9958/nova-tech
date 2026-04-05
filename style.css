@@ -339,7 +339,7 @@ nav a.active {
 }
 
 .contact-info-in-footer i {
-    padding-right: 1rem;
+    padding-right: 0.5rem;
 }
 
 .newsletter-in-footer {
@@ -963,7 +963,7 @@ body.dark .feature-section .card h2,
 body.dark .card-in-testimonials,
 body.dark .card-in-testimonials .author-name,
 body.dark .card-in-testimonials .avatar,
-body.dark .who-we-are-section h1,
+
 body.dark .our-mission-section h1 {
     background-color: #161B22;
     color: white;
@@ -977,8 +977,6 @@ body.dark .feature-section .card p {
 body.dark .footer,
 body.dark .logo-description-socials,
 body.dark .footer .quick-links h2,
-body.dark .footer .quick-links ul li a,
-body.dark .footer .quick-links ul,
 body.dark .contact-info-in-footer,
 body.dark .newsletter-in-footer,
 body.dark .copyright-and-policies-in-footer,
@@ -992,6 +990,18 @@ body.dark .price-card p {
     background-color: #0D1117;
     border-color: skyblue;
     color: skyblue;
+}
+
+.socials-in-footer i:hover{
+    background-color: skyblue;
+    border-color: #0D1117;
+    color: #0D1117;
+}
+
+body.dark .who-we-are-section h1,
+body.dark .our-mission-section h1{
+    color: white;
+    background-color:#0D1117;
 }
 
 body.dark .modal-box,
