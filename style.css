@@ -241,8 +241,9 @@ nav a.active {
 
 .feature-cards {
     display: flex;
-    justify-content: space-around;
-    gap: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
     margin-top: 4rem;
     margin-bottom: 10rem;
 }
@@ -690,10 +691,11 @@ body.dark .price-card.selected-card button {
 
 .testimonials-cards {
     display: flex;
+    flex-wrap: wrap;
     padding: 4rem 2rem;
     justify-content: center;
-    justify-content: space-evenly;
     align-items: center;
+    gap: 5rem;
 }
 
 .card-in-testimonials {
