@@ -67,6 +67,12 @@ if (modal) {
             modal.classList.toggle("get-started");
         });
     });
+
+    modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+            modal.classList.remove("get-started");
+        }
+    });
 }
 
 if (closeBtn) {
