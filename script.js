@@ -108,18 +108,25 @@ let darkModeSwitch = document.querySelector(".day-night-mode");
 let body = document.querySelector("body");
 
 let savedTheme = localStorage.getItem("theme");
-
+let sunIcon = document.getElementById("sun-icon");
+let moonIcon = document.getElementById("moon-icon");
 
 if (savedTheme == "dark") {
     body.classList.add("dark");
+    sunIcon.style.display = "flex";
+    moonIcon.style.display = "none";
 }
 
 darkModeSwitch.addEventListener("click", function () {
     body.classList.toggle("dark");
     if (body.classList.contains("dark")) {
         localStorage.setItem("theme", "dark");
+        sunIcon.style.display = "flex";
+        moonIcon.style.display = "none";
     } else {
         localStorage.setItem("theme", "light");
+        sunIcon.style.display = "none";
+        moonIcon.style.display = "flex";
     }
 });
 
@@ -229,3 +236,9 @@ if (modalForm) {
         }
     })
 };
+
+
+
+if (savedTheme === "dark") {
+
+}

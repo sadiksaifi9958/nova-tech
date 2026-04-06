@@ -49,16 +49,17 @@ header {
 }
 
 .day-night-mode {
-    color: black;
-    border: 1px solid black;
-    border-radius: 5px;
     font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    background-color: white;
     padding: 0.5rem;
+    background: none;
+    border: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
 }
 
 .burger {
@@ -940,7 +941,7 @@ body.dark .hero-section h1 {
 body.dark header {
     background-color: rgba(13, 17, 23, 0.5);
     backdrop-filter: blur(10px);
-    border-color: skyblue;
+    border-color: blue;
 }
 
 body.dark .feature-para,
@@ -1025,10 +1026,20 @@ body.dark .modal-header h1 {
     color: blue;
 }
 
-body.dark .day-night-mode {
+body.dark #sun-icon {
+    display: flex;
     background-color: #0D1117;
     border-color: white;
     color: white;
+}
+
+body.dark #moon-icon {
+    display: none;
+}
+
+body.dark .day-night-mode {
+    color: white;
+    border-color: white;
 }
 
 body.dark .contact-inputs div {
