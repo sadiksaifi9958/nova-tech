@@ -149,6 +149,10 @@ nav a.active {
     cursor: pointer;
 }
 
+#mobile-getstarted-btn {
+    display: none;
+}
+
 .hero-section {
     width: 100%;
     background-color: white;
@@ -291,8 +295,9 @@ nav a.active {
 .footer {
     border-top: 1px solid lightgray;
     display: flex;
-    padding: 7rem 1rem;
+    padding: 2rem 4rem;
     justify-content: center;
+    align-items: flex-start;
     gap: 2rem;
 }
 
@@ -1276,6 +1281,10 @@ body.dark #submit {
 
     .header-get-started-btn {
         display: none;
+    }
+
+    #mobile-getstarted-btn {
+        display: flex;
     }
 
     .search-group {
