@@ -298,7 +298,7 @@ nav a.active {
     padding: 2rem 4rem;
     justify-content: center;
     align-items: flex-start;
-    gap: 2rem;
+    gap: 0.5rem
 }
 
 .logo-description-socials {
@@ -334,9 +334,10 @@ nav a.active {
     padding: 0.4rem;
 }
 
-.contact-newsletter {
+.brand-contact {
     display: flex;
-    gap: 2rem;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .contact-info-in-footer {
@@ -355,7 +356,7 @@ nav a.active {
     display: flex;
     flex-direction: column;
     color: #64748B;
-    gap: 1rem;
+    gap: 0.5rem;
     font-size: 0.7rem;
 }
 
@@ -366,6 +367,9 @@ nav a.active {
 .newsletter-in-footer form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .newsletter-in-footer input {
@@ -379,6 +383,11 @@ nav a.active {
     margin-bottom: 1rem;
     font-size: 0.7rem;
     color: #64748B;
+}
+
+.newsletter-in-footer input:focus {
+    border-color: blue;
+    outline: 3px solid skyblue;
 }
 
 .newsletter-in-footer button {
@@ -1188,18 +1197,54 @@ body.dark #submit {
         width: 40vh;
     }
 
-    .contact-info {
-        gap: 2rem;
+    .contact-info-in-footer {
+        gap: 0.5rem;
     }
 
     .footer {
         flex-direction: column;
-        gap: 3rem;
+
+        padding: 1.5rem;
     }
 
-    .logo-description-socials,
+    .logo-description-socials {
+        width: 45%;
+    }
+
+    .socials-in-footer {
+        padding-top: 0;
+    }
+
+    .brand-contact {
+        border-bottom: 1px solid lightgrey;
+        padding-bottom: 1rem;
+    }
+
+    body.dark .brand-contact {
+        border-bottom: 1px solid skyblue;
+        padding-bottom: 0.5rem;
+    }
+
     .newsletter-in-footer {
-        width: 65%;
+        width: 100%;
+    }
+
+    .newsletter-in-footer form {
+        flex-direction: row;
+    }
+
+    .newsletter-in-footer input {
+        margin-bottom: 0;
+        width: 14rem;
+    }
+
+    .newsletter-in-footer button {
+        width: 6rem;
+        margin-bottom: 0;
+    }
+
+    .newsletter-in-footer p {
+        width: 100%;
     }
 
     .quick-links {
