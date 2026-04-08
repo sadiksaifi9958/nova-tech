@@ -206,8 +206,6 @@ if (contactForm) {
     )
 }
 
-
-
 let searchBtn = document.querySelector(".search-btn");
 let searchInput = document.querySelector(".search-input");
 
@@ -257,7 +255,7 @@ if (modalForm) {
                 user_message: modalMessage.value
             }).then(function () {
                 modalSuccess.textContent = "Message sent successfully!";
-                contactForm.reset();
+                modalForm.reset();
             }).catch((error) => {
                 console.log(error);
                 modalSuccess.textContent = "your message could not be submit!";
