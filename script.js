@@ -193,6 +193,7 @@ if (contactForm) {
                     contactForm.reset();
                 }).catch((error) => {
                     console.log(error);
+                    successMsg.style.color = "red";
                     successMsg.textContent = "your message could not be submit!";
                 });
 
@@ -258,6 +259,7 @@ if (modalForm) {
                 modalForm.reset();
             }).catch((error) => {
                 console.log(error);
+                modalSuccess.style.color = "red";
                 modalSuccess.textContent = "your message could not be submit!";
             });
         } else {
@@ -281,8 +283,27 @@ newsletterForm.addEventListener("submit", function (e) {
         newsletterForm.reset();
     }).catch((error) => {
         console.log(error)
-        alert("Something went wrong, try again.")
+        subscribeSuccessMsg.style.color = "red";
+        subscribeSuccessMsg.textContent = "subscribed successfully";
     })
 });
 
+let backToTopBtn = document.querySelector(".back-to-top");
 
+window.addEventListener("scroll", function () {
+    if (window.scrollY > 400) {
+        backToTopBtn.classList.add("visible-back-to-top");
+    } else {
+        backToTopBtn.classList.remove("visible-back-to-top");
+
+    }
+});
+
+backToTopBtn.addEventListener("click",
+    function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        })
+    }
+);
