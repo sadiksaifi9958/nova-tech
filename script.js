@@ -249,6 +249,7 @@ if (modalForm) {
             modalError[2].textContent === "";
 
         if (isValidModal) {
+
             modalSuccess.textContent = "Message sent successfully!";
             modalForm.reset();
         } else {
