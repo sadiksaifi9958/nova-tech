@@ -1,3 +1,4 @@
+emailjs.init("k-9jzyU8NoWo0ZffM");
 
 document.body.insertAdjacentHTML("beforeend", `<div id="modal-overlay">
         <div class="modal-box">
@@ -192,7 +193,7 @@ if (contactForm) {
                     contactForm.reset();
                 }).catch((error) => {
                     console.log(error);
-                    alert("your message could not be submit");
+                    successMsg.textContent = "your message could not be submit!";
                 });
 
             } else {
@@ -249,9 +250,18 @@ if (modalForm) {
             modalError[2].textContent === "";
 
         if (isValidModal) {
-
-            modalSuccess.textContent = "Message sent successfully!";
-            modalForm.reset();
+            emailjs.send("service_7zcj7he", "template_skdpyh9", {
+                user_name: modalName.value,
+                user_email: modalEmail.value,
+                user_subject: "lead from modal",
+                user_message: modalMessage.value
+            }).then(function () {
+                modalSuccess.textContent = "Message sent successfully!";
+                contactForm.reset();
+            }).catch((error) => {
+                console.log(error);
+                modalSuccess.textContent = "your message could not be submit!";
+            });
         } else {
             modalSuccess.textContent = "";
         }
