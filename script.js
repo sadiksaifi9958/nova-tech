@@ -245,6 +245,19 @@ if (modalForm) {
 
 
 
-if (savedTheme === "dark") {
+let newsletterForm = document.getElementById("newsletter-form");
+let subscribeSuccessMsg = document.querySelector(".subscribe-success-message")
+let userEmail = document.querySelector(".newsletter-input");
 
-}
+newsletterForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    emailjs.send("service_7zcj7he", "template_26f79k9", {
+        user_email: userEmail.value
+    }).then(function () {
+        subscribeSuccessMsg.textContent = "subscribed successfully";
+        newsletterForm.reset();
+    }).catch((error) => {
+        console.log(error)
+        alert("Something went wrong, try again.")
+    })
+}); 

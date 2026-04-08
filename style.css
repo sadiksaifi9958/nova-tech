@@ -1086,7 +1086,8 @@ body.dark #submit {
     font-size: 0.8rem;
 }
 
-.success-message {
+.success-message,
+.subscribe-success-message {
     color: blue;
     font-size: 0.8rem;
 }
