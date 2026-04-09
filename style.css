@@ -419,7 +419,6 @@ nav a.active {
 }
 
 .policies {
-
     display: flex;
     gap: 1rem;
 }
@@ -580,7 +579,7 @@ nav a.active {
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     padding-top: 0;
 }
 
@@ -656,6 +655,33 @@ body.dark .price-card.selected-card button {
 
 .selected-card button:active {
     opacity: 0.7;
+}
+
+.guarantee-banner {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 2rem;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 60%;
+    background-color: #EEF2FF;
+}
+
+.guarantee-banner i {
+    color: blue;
+    font-size: 2.5rem;
+}
+
+.guarantee-banner h3 {
+    font-size: 1rem;
+}
+
+.guarantee-banner p {
+    font-size: 1rem;
+    color: #64748B;
 }
 
 .contact-page-headings {
