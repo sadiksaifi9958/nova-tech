@@ -600,7 +600,9 @@ nav a.active {
     color: blue;
 }
 
-.price-card p {
+.price-card p,
+.faq-section p,
+.faq-card p {
     color: #64748B;
 }
 
@@ -639,9 +641,9 @@ nav a.active {
 }
 
 .comparison-table {
-    width: 100%;
     width: 70%;
     margin: 0 auto;
+    align-self: center;
 }
 
 .comparison-table td {
@@ -679,10 +681,33 @@ nav a.active {
     padding-bottom: 2rem;
 }
 
-.comparison-table th p {
+.comparison-table th p,
+.faq-section h2 {
     color: blue;
 }
 
+.faq-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.faq-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.faq-card {
+    padding: 2rem;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width: 22rem;
+    line-height: 1.4rem;
+}
 
 .cross {
     color: red;
