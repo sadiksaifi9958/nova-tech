@@ -40,7 +40,7 @@ header {
     gap: 2rem;
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid blue;
 }
 
 .toggle-group {
@@ -349,6 +349,10 @@ nav a.active {
 
 .contact-info-in-footer i {
     padding-right: 0.5rem;
+}
+
+contact-info-in-footer a {
+    color: #64748B;
 }
 
 .newsletter-in-footer {
