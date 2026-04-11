@@ -1121,10 +1121,13 @@ body.dark header {
 }
 
 body.dark .feature-para,
+body.dark .testimonials-para,
+body.dark .cta-section p {
+    color: skyblue;
+}
+
 body.dark .feat-heading-2,
-body.dark .testimonials-headings p,
 body.dark .testimonials-headings h1,
-body.dark .cta-section p,
 body.dark .cta-section h1,
 body.dark .value-section-heading h1,
 body.dark .why-us-section-heading h1,
