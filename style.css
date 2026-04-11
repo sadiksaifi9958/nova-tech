@@ -220,9 +220,7 @@ nav a.active {
     color: blue;
 }
 
-.feature-section,
-.value-section,
-.why-us-section {
+.feature-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -368,7 +366,6 @@ nav a.active {
 .newsletter-in-footer form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 0.5rem;
 }
@@ -385,18 +382,13 @@ nav a.active {
     color: #64748B;
 }
 
-.newsletter-in-footer input:focus {
-    border-color: blue;
-    outline: 3px solid skyblue;
-}
-
 .newsletter-in-footer button {
     background-color: blue;
     color: white;
     font-size: 0.7rem;
     border-radius: 5px;
     border: none;
-    height: 1.5rem;
+    height: 2rem;
     width: 12rem;
     outline: none;
     cursor: pointer;
@@ -486,7 +478,7 @@ nav a.active {
 
 .our-mission-section h1,
 .value-section-heading h1,
-why-us-section-heading h1 {
+.why-us-section-heading h1 {
     color: #0F172A;
 }
 
@@ -494,7 +486,7 @@ why-us-section-heading h1 {
 .our-stats-section h2,
 .our-mission-section h2,
 .value-section-heading h2,
-why-us-section-heading h2 {
+.why-us-section-heading h2 {
     color: blue;
     font-size: 1rem;
 }
@@ -502,7 +494,7 @@ why-us-section-heading h2 {
 .who-we-are-section p,
 .our-stats-section p,
 .our-mission-section p,
-why-us-section-heading p,
+.why-us-section-heading p,
 .value-section-heading p {
     font-size: 1.2rem;
     color: #64748B;
@@ -524,11 +516,12 @@ why-us-section-heading p,
     margin-top: 1rem;
 }
 
-.value-section-heading {
+.value-section-heading,
+.why-us-section-heading {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 2rem;
+    padding: 5rem;
 }
 
 .values-cards {
@@ -546,14 +539,14 @@ why-us-section-heading p,
     align-items: center;
     cursor: pointer;
     padding: 3rem;
-    background-color: white;
     border: 1px solid lightgrey;
+    width: 20rem;
 }
 
 .value-card p,
 .why-us-card p {
-    width: 13rem;
     font-size: 0.9rem;
+    color: #64748B;
 }
 
 .value-card i,
@@ -562,11 +555,13 @@ why-us-section-heading p,
     color: blue;
 }
 
-.pricing-page-headings {
-    padding: 5rem 5rem;
+.pricing-page-headings,
+.faq-section-heading,
+.comparison-section-heading {
+    padding: 5rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 1.5rem;
 }
 
 .pricing-page-headings h3 {
@@ -596,13 +591,21 @@ why-us-section-heading p,
     border: 1px solid lightgrey;
 }
 
-.price-card h2 {
+.price-card h2,
+.table-heading th h3 {
+    color: #0F172A;
+}
+
+.price-card-rate h1,
+.price-card-rate h3,
+.table-heading th p {
     color: blue;
 }
 
 .price-card p,
 .faq-section .faq-section-heading p,
-.faq-card p {
+.faq-card p,
+.comparison-section p {
     color: #64748B;
 }
 
@@ -630,14 +633,6 @@ why-us-section-heading p,
     background-color: blue;
     color: white;
     cursor: pointer;
-}
-
-.comparison-section {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: flex-start;
-    padding: 2rem;
 }
 
 .comparison-table {
@@ -682,22 +677,9 @@ why-us-section-heading p,
 }
 
 .comparison-table th p,
-.faq-section .faq-section-heading h3,
+.faq-section-heading h3,
 .comparison-section h3 {
     color: blue;
-}
-
-.faq-section-heading {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.faq-section {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem;
 }
 
 .faq-cards {
@@ -705,7 +687,7 @@ why-us-section-heading p,
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
-    padding: 2rem;
+    padding: 0 2rem 4rem 2rem;
 }
 
 .faq-card {
@@ -882,8 +864,7 @@ body.dark .price-card.selected-card button {
     color: #0F172A;
 }
 
-.testimonials-para,
-.comparison-section p {
+.testimonials-para {
     font-size: 1rem;
     color: #64748B;
     text-align: center;
@@ -1126,8 +1107,6 @@ body.dark {
     color: white;
 }
 
-
-
 body.dark header,
 body.dark .hero-section,
 body.dark .hero-section h1 {
@@ -1146,7 +1125,13 @@ body.dark .feat-heading-2,
 body.dark .testimonials-headings p,
 body.dark .testimonials-headings h1,
 body.dark .cta-section p,
-body.dark .cta-section h1 {
+body.dark .cta-section h1,
+body.dark .value-section-heading h1,
+body.dark .why-us-section-heading h1,
+body.dark .our-mission-section h1,
+body.dark comparison-section-heading h1,
+body.dark .why-us-card h2,
+body.dark .value-card h2 {
     color: white;
 }
 
@@ -1164,37 +1149,63 @@ body.dark .search-group {
     border-color: white;
 }
 
-body.dark .feature-section .card,
-body.dark .feature-section .card h2,
-body.dark .card-in-testimonials,
-body.dark .card-in-testimonials .author-name,
-body.dark .card-in-testimonials .avatar,
-
-body.dark .our-mission-section h1 {
-    background-color: #161B22;
-    color: white;
-    border-color: #161B22;
-}
-
-body.dark .feature-section .card p {
-    color: skyblue;
-}
-
 body.dark .footer,
 body.dark .logo-description-socials,
 body.dark .footer .quick-links h2,
 body.dark .contact-info-in-footer,
 body.dark .newsletter-in-footer,
 body.dark .copyright-and-policies-in-footer,
-body.dark .newsletter-in-footer input,
-body.dark .copyright-and-policies-in-footer .policies a,
+body.dark .copyright-and-policies-in-footer .policies a {
+    color: white;
+    border-color: #334155;
+    background-color: #0D1117;
+}
+
+body.dark .newsletter-in-footer input {
+    border-color: white;
+    background-color: #0D1117;
+    color: white;
+}
+
+body.dark .feature-section .card,
+body.dark .feature-section .card h2,
+body.dark .card-in-testimonials,
+body.dark .card-in-testimonials .author-name,
+body.dark .card-in-testimonials .avatar,
+body.dark .value-card,
+body.dark .why-us-card,
+body.dark .price-card,
+body.dark .stats-card,
+body.dark .guarantee-banner,
+body.dark .who-we-are-section h1,
+body.dark .comparison-section-heading h1,
+body.dark .table-heading th h3,
+body.dark .our-mission-section h1,
+body.dark .price-card h2 {
+    background-color: #0D1117;
+    color: white;
+    border-color: #334155;
+}
+
+body.dark .feature-section .card p,
+body.dark .guarantee-banner div p,
+body.dark .comparison-section-heading p,
+body.dark .faq-section-heading p {
+    color: skyblue;
+}
+
+
 body.dark .who-we-are-section p,
 body.dark .stats-cards div p,
 body.dark .stats-cards div,
 body.dark .our-mission-section p,
-body.dark .price-card p {
-    background-color: #0D1117;
-    border-color: skyblue;
+body.dark .price-card p,
+body.dark .value-section-heading p,
+body.dark .why-us-section-heading p,
+body.dark .why-us-card p,
+body.dark .value-card p,
+body.dark .faq-card p {
+    border-color: #334155;
     color: skyblue;
 }
 
@@ -1202,12 +1213,6 @@ body.dark .price-card p {
     background-color: skyblue;
     border-color: #0D1117;
     color: #0D1117;
-}
-
-body.dark .who-we-are-section h1,
-body.dark .our-mission-section h1 {
-    color: white;
-    background-color: #0D1117;
 }
 
 body.dark .modal-box,
@@ -1239,9 +1244,19 @@ body.dark .day-night-mode {
     border-color: white;
 }
 
-body.dark .contact-inputs div {
+body.dark .contact-inputs div,
+body.dark .faq-card,
+body.dark .table-heading th {
     border-color: #334155;
 }
+
+body.dark .comparison-table td {
+    border-color: #334155;
+    color: skyblue;
+    background-color: #0D1117;
+}
+
+
 
 body.dark .contact-inputs div input,
 body.dark .contact-inputs div textarea {
@@ -1450,7 +1465,7 @@ body.dark #submit {
     .footer {
         flex-direction: column;
         padding: 1.5rem;
-        gap: 0.5rem;
+        gap: 1.5rem;
     }
 
     .logo-description-socials {
@@ -1463,13 +1478,13 @@ body.dark #submit {
 
     .brand-contact {
         border-bottom: 1px solid lightgrey;
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
         gap: 1rem;
     }
 
     body.dark .brand-contact {
-        border-bottom: 1px solid skyblue;
-        padding-bottom: 0.5rem;
+        border-bottom: 1px solid #334155;
+        padding-bottom: 1.5rem;
     }
 
     .newsletter-in-footer {
@@ -1508,8 +1523,17 @@ body.dark #submit {
 
     .who-we-are-section,
     .our-stats-section,
-    .our-mission-section {
+    .our-mission-section,
+    .value-section-heading,
+    .why-us-section-heading,
+    .comparison-section-heading,
+    .faq-section-heading {
         padding: 2rem;
+        margin-top: 2rem;
+    }
+
+    .comparison-table {
+        margin-top: 1.5rem;
     }
 
     .stats-cards div h2 {
@@ -1582,6 +1606,11 @@ body.dark #submit {
 
     .search-group {
         display: none;
+    }
+
+    .guarantee-banner {
+        width: 85%;
+        padding: 1rem;
     }
 
 }
