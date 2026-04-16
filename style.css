@@ -40,7 +40,6 @@ header {
     gap: 2rem;
     background-color: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid blue;
 }
 
 .toggle-group {
