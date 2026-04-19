@@ -16,16 +16,16 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-.logo,
-.logo span {
-    font-size: 1.1rem;
+.logo {
+    font-size: 2rem;
     font-weight: bold;
+    color: #0F172A;
 }
 
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -37,7 +37,8 @@ header {
 
 .toggle-group {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
+    align-items: center;
 }
 
 .day-night-mode {
@@ -50,8 +51,10 @@ header {
     background: none;
     border: none;
     color: black;
-    border: 1px solid black;
-    border-radius: 5px;
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
 }
 
 .burger {
@@ -62,7 +65,7 @@ nav {
     gap: 3rem;
     display: flex;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 nav button:active {
@@ -93,7 +96,7 @@ nav a.active {
     border-radius: 5px;
     border: 2px solid blue;
     outline: none;
-    font-size: 1rem;
+    font-size: 1.1rem;
     cursor: pointer;
 }
 
@@ -275,12 +278,10 @@ nav a.active {
     border-radius: 5px;
     padding: 0.4rem;
     color: #0F172A;
-    opacity: 0.85;
 }
 
 .socials-in-footer i:hover {
-    background-color: #EDE9E6;
-    opacity: 1;
+    background-color: #EDE9E6;  
 }
 
 .newsletter-in-footer {
