@@ -239,41 +239,43 @@ nav a.active {
 }
 
 .logo-in-footer {
-    width: 10rem;
-    height: auto;
+    font-size: 7rem
 }
 
 .footer {
     display: flex;
-    padding: 2rem 4rem;
-    justify-content: space-between;
-}
-
-.logo-description-socials {
-    width: 12rem;
-    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-    color: #0F172A;
+    align-items: center;
+    gap: 8rem;
 }
 
-.logo-description-socials p {
-    font-size: 0.9rem;
+.logo-socials {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #0F172A;
+    padding: 2rem;
+}
+
+.logo-socials div p{
+    color: #64748B;
+    margin-left: 0.5rem;
 }
 
 .socials-in-footer {
     display: flex;
-    gap: 0.5rem;
+    gap: 1rem;
+    margin-right: 6rem;
 }
 
 .socials-in-footer i {
-    font-size: 1.1rem;
+    font-size: 1.8rem;
     border: none;
     border-radius: 5px;
     padding: 0.4rem;
     color: #0F172A;
-    opacity: 0.75;
+    opacity: 0.85;
 }
 
 .socials-in-footer i:hover {
@@ -281,33 +283,32 @@ nav a.active {
     opacity: 1;
 }
 
-.contact-info-in-footer {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    color: #0F172A;
-    font-size: 0.9rem;
-}
-
-.contact-info-in-footer i {
-    padding-right: 0.5rem;
-}
-
-contact-info-in-footer a {
-    color: #0F172A;
-}
-
 .newsletter-in-footer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     color: #0F172A;
-    gap: 0.5rem;
+    gap: 2rem;
     font-size: 0.9rem;
 }
 
+.newsletter-in-footer h3{
+    color: blue;
+}
+
+.newsletter-in-footer p{
+    color: #64748B;
+}
+
+
 .newsletter-in-footer form {
     display: flex;
-    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.newsletter-in-footer form p{
+    display: block;
 }
 
 .newsletter-in-footer input {
@@ -320,7 +321,6 @@ contact-info-in-footer a {
     outline: none;
     font-size: 0.9rem;
     color: #0F172A;
-    margin-bottom: 0.5rem;
 }
 
 .newsletter-in-footer button {
@@ -329,40 +329,34 @@ contact-info-in-footer a {
     font-size: 0.9rem;
     border-radius: 5px;
     border: none;
-    height: 1.9rem;
-    width: 12rem;
     outline: none;
     cursor: pointer;
+    flex-wrap: nowrap;
+    padding: 0.5rem 1rem;
+    height: 2rem;
 }
 
 .newsletter-in-footer button:active {
     opacity: 0.8;
 }
 
-.copyright-and-policies-in-footer {
-    border-top: 1px solid lightgrey;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 1rem;
-    font-size: 0.9rem;
-    color: #0F172A;
-    padding: 1.3rem;
-}
-
 .policies {
     display: flex;
     gap: 1rem;
+    border-top: 1px solid lightgrey;
+    padding: 1rem;
+    justify-content: center;
 }
 
 .policies a {
     text-decoration: none;
     color: #0F172A;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    opacity: 0.70;
 }
 
 .policies a:hover {
-    text-decoration: underline;
+    opacity: 1;
 }
 
 .who-we-are-section {
