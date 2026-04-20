@@ -1,6 +1,7 @@
 emailjs.init("k-9jzyU8NoWo0ZffM");
 
-document.body.insertAdjacentHTML("beforeend", `<div id="modal-overlay">
+document.body.insertAdjacentHTML("beforeend", `
+    <div id="modal-overlay">
         <div class="modal-box">
             <div class="modal-header">
                 <div class="modal-headings">

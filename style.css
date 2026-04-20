@@ -223,7 +223,6 @@ nav a.active {
     align-items: center;
     border: 1px solid skyblue;
     padding: 3.5rem;
-    background-color: #EEF2FF;
 }
 
 .card h2 {
@@ -263,7 +262,7 @@ nav a.active {
     padding-bottom: 0;
 }
 
-.copyright-text{
+.copyright-text {
     align-self: flex-start;
     margin-left: 2.4rem;
     margin-bottom: 1rem;
@@ -840,6 +839,7 @@ body.dark .price-card.selected-card button {
     color: #64748B;
     border-bottom: 1px solid lightgrey;
     padding: 1rem 0;
+    font-style: italic;
 }
 
 .avatar {
@@ -1143,7 +1143,7 @@ body.dark .comparison-section-heading p,
 body.dark .faq-section-heading p,
 body.dark .newsletter-in-footer p,
 body.dark .copyright-text,
-body.dark .policies a{
+body.dark .policies a {
     color: skyblue;
 }
 
@@ -1334,12 +1334,12 @@ body.dark .terms-section p {
 
 body.dark .logo-socials .logo-in-footer,
 body.dark .logo,
-body.dark .socials-in-footer i{
+body.dark .socials-in-footer i {
     color: white;
 }
 
-body.dark .socials-in-footer i:hover{
-    background-color:#0F172A;
+body.dark .socials-in-footer i:hover {
+    background-color: #0F172A;
     color: white;
 }
 
@@ -1631,39 +1631,39 @@ body.dark .hero-section #btn-2:hover {
         margin-top: 2rem;
         font-size: 0.9rem;
         width: 100%;
-        text-align: center; 
+        text-align: center;
     }
 
-    .socials-in-footer i{
+    .socials-in-footer i {
         font-size: 1.2rem;
     }
 
-    
+
     .newsletter-in-footer form {
         gap: 0.5;
     }
 
-    .footer{
+    .footer {
         gap: 8rem;
     }
 
-    .copyright-text{
+    .copyright-text {
         text-align: center;
         margin-left: 0;
         font-size: 0.9rem;
 
     }
 
-    .policies{
+    .policies {
         padding: 0.5rem;
     }
 
-    .policies a{
+    .policies a {
         padding: 0 0.5rem;
         font-size: 0.9rem;
     }
 
-    
+
 
 
 
