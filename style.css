@@ -869,13 +869,12 @@ body.dark .price-card.selected-card button {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: floralwhite;
     width: 19rem;
     transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .card-in-testimonials.reveal.active:hover {
-    transform: translateY(-6px);
+    transform: translateY(-4px) rotate(-0.4deg);
     transition: transform 0.25s ease;
     border-color: #7F77DD;
 }
@@ -893,14 +892,19 @@ body.dark .price-card.selected-card button {
     font-size: 1rem;
     border-right: 1px solid lightgrey;
     border-radius: 5px;
-    background-color: #EEF2FF;
     height: 40px;
     width: 40px;
     min-width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
+
+.card-in-testimonials.reveal.active:hover .avatar {
+    transform: scale(1.15);
+}
+
 
 .testimonial-author {
     display: flex;
