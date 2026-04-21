@@ -203,26 +203,25 @@ nav {
 }
 
 .feat-heading-1 {
-    text-align: center;
     font-size: 1rem;
     color: blue;
     letter-spacing: 0.08em;
 }
 
-.feature-section {
+.feature-section-heading,
+.testimonials-headings,
+.cta-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 2rem;
+    padding: 5rem 0 0 5rem;
 }
 
 .feat-heading-2 {
-    text-align: center;
     font-size: 1.5rem;
 }
 
 .feature-para {
-    text-align: center;
     font-size: 1rem;
     color: #64748B;
 }
@@ -237,6 +236,7 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 5rem;
     margin-top: 4rem;
     margin-bottom: 10rem;
@@ -299,21 +299,13 @@ nav {
     font-size: 7rem
 }
 
-.footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8rem;
-}
-
 .logo-socials {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     color: #0F172A;
-    padding: 2rem;
-    padding-bottom: 0;
+    padding: 1rem 2rem 0 2rem;
 }
 
 .copyright-text {
@@ -342,38 +334,37 @@ nav {
     background-color: #EDE9E6;
 }
 
-.newsletter-in-footer {
+.newsletter-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     color: #0F172A;
-    gap: 2rem;
+    gap: 1rem;
     font-size: 0.9rem;
     text-align: center;
+    padding: 5rem 0 3rem 5rem;
 }
 
-.newsletter-in-footer h3 {
+.newsletter-section h3 {
     color: blue;
     letter-spacing: 0.08em;
 }
 
-.newsletter-in-footer p {
+.newsletter-section p {
     color: #64748B;
 }
 
-
-.newsletter-in-footer form {
+.newsletter-section form {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
 }
 
-.newsletter-in-footer form p {
+.newsletter-section form p {
     display: block;
 }
 
-.newsletter-in-footer input {
+.newsletter-section input {
     height: 2rem;
     width: 12rem;
     padding: 0.3rem;
@@ -383,9 +374,10 @@ nav {
     outline: none;
     font-size: 0.9rem;
     color: #0F172A;
+    margin-right: 1rem;
 }
 
-.newsletter-in-footer button {
+.newsletter-section button {
     background-color: blue;
     color: white;
     font-size: 0.9rem;
@@ -399,12 +391,12 @@ nav {
     transition: transform 0.25s ease;
 }
 
-.newsletter-in-footer button:active {
+.newsletter-section button:active {
     background-color: darkblue;
     transform: scale(0.97);
 }
 
-.newsletter-in-footer button:hover {
+.newsletter-section button:hover {
     transform: scale(1.05);
 }
 
@@ -895,13 +887,6 @@ body.dark .price-card.selected-card button {
     border-color: black;
 }
 
-.testimonials-headings {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-}
-
 .testimonials-section h2,
 .comparison-section h2 {
     font-size: 1rem;
@@ -918,7 +903,6 @@ body.dark .price-card.selected-card button {
 .testimonials-para {
     font-size: 1rem;
     color: #64748B;
-    text-align: center;
 }
 
 .testimonials-cards {
@@ -989,14 +973,6 @@ body.dark .price-card.selected-card button {
     color: #FBBF24;
 }
 
-.cta-section {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    align-items: center;
-    padding: 12rem 0;
-}
-
 .cta-section h2 {
     color: blue;
     font-size: 1rem;
@@ -1006,13 +982,11 @@ body.dark .price-card.selected-card button {
 .cta-section h1 {
     font-size: 1.5rem;
     color: #0F172A;
-    text-align: center;
 }
 
 .cta-section p {
     color: #64748B;
     font-size: 1rem;
-    text-align: center;
 }
 
 .cta-section button {
@@ -1025,6 +999,7 @@ body.dark .price-card.selected-card button {
     outline: none;
     cursor: pointer;
     transition: transform 0.25s ease;
+    width: 9rem;
 }
 
 #modal-overlay {
