@@ -50,7 +50,7 @@ header {
     background: none;
     border: none;
     color: black;
-    border: 2px solid black;
+    border: 1.9px solid black;
     border-radius: 50%;
     height: 2rem;
     width: 2rem;
@@ -65,11 +65,6 @@ nav {
     display: flex;
     align-items: center;
     font-size: 1.1rem;
-}
-
-.get-started-btn:active {
-    opacity: 0.7;
-    transform: translate(-7px, -7px);
 }
 
 .nav-link {
@@ -89,7 +84,7 @@ nav {
     left: 0;
     width: 0;
     height: 2px;
-    background-color: #7F77DD;
+    background-color: blue;
     transition: width 0.2s ease;
 }
 
@@ -99,7 +94,7 @@ nav {
 
 .nav-link.active {
     font-weight: 700;
-    color: #7F77DD;
+    color: blue;
 }
 
 .get-started-btn {
@@ -1411,9 +1406,7 @@ body.dark .hero-section #btn-2:hover {
 }
 
 @media(max-width: 768px) {
-    nav button {
-        font-size: 1rem;
-    }
+    nav button {}
 
     .hero-section {
         min-height: 50vh;
@@ -1459,9 +1452,15 @@ body.dark .hero-section #btn-2:hover {
         display: block;
         background: none;
         border: none;
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         color: black;
         cursor: pointer;
+    }
+
+    .day-night-mode {
+        font-size: 0.9rem;
+        height: 1.6rem;
+        width: 1.6rem;
     }
 
     #nav-menu {
@@ -1474,6 +1473,19 @@ body.dark .hero-section #btn-2:hover {
         padding: 0;
         order: 3;
         display: flex !important;
+        align-items: flex-start;
+    }
+
+
+    .header-get-started-btn {
+        display: none;
+    }
+
+    #mobile-getstarted-btn {
+        display: flex;
+        font-size: 1rem;
+        width: 100%;
+        justify-content: center;
     }
 
     #nav-menu.open {
@@ -1653,18 +1665,6 @@ body.dark .hero-section #btn-2:hover {
         padding: 7rem 0;
     }
 
-    .header-get-started-btn {
-        display: none;
-    }
-
-    #mobile-getstarted-btn {
-        display: flex;
-    }
-
-    .search-group {
-        display: none;
-    }
-
     .guarantee-banner {
         width: 85%;
         padding: 1rem;
@@ -1720,8 +1720,7 @@ body.dark .hero-section #btn-2:hover {
         font-size: 0.9rem;
     }
 
-
-
-
-
+    .logo {
+        font-size: 1.5rem;
+    }
 }
