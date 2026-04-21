@@ -14,11 +14,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: #0F172A;
+    font-weight: 700;
 }
 
 header {
@@ -131,16 +133,21 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 12rem;
+    padding: 6rem 12rem;
 }
 
 .hero-section h1 {
     position: static;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #0F172A;
     line-height: 1.3;
     margin-bottom: 1rem;
-    width: 80%;
+    max-width: 650px;
+}
+
+.accent-text {
+    color: #2563EB;
+    font-family: 'Playfair Display', serif;
 }
 
 .hero-section p {
@@ -199,6 +206,7 @@ nav {
     text-align: center;
     font-size: 1rem;
     color: blue;
+    letter-spacing: 0.08em;
 }
 
 .feature-section {
@@ -346,6 +354,7 @@ nav {
 
 .newsletter-in-footer h3 {
     color: blue;
+    letter-spacing: 0.08em;
 }
 
 .newsletter-in-footer p {
@@ -387,12 +396,16 @@ nav {
     flex-wrap: nowrap;
     padding: 0.5rem 1rem;
     height: 2rem;
-    transition: 0s;
+    transition: transform 0.25s ease;
 }
 
 .newsletter-in-footer button:active {
-    opacity: 0.8;
-    transform: translate(-7px, -7px);
+    background-color: darkblue;
+    transform: scale(0.97);
+}
+
+.newsletter-in-footer button:hover {
+    transform: scale(1.05);
 }
 
 .policies {
@@ -452,6 +465,7 @@ nav {
 .stats-cards div h2 {
     color: blue;
     font-size: 2.2rem;
+    letter-spacing: 0.08em;
 }
 
 .stats-cards div p {
@@ -478,6 +492,7 @@ nav {
 .why-us-section-heading h2 {
     color: blue;
     font-size: 1rem;
+    letter-spacing: 0.08em;
 }
 
 .who-we-are-section p,
@@ -760,6 +775,7 @@ body.dark .price-card.selected-card button {
 
 .contact-page-headings h3 {
     color: blue;
+    letter-spacing: 0.08em;
 }
 
 .input-groups-and-contact-info {
@@ -847,6 +863,7 @@ body.dark .price-card.selected-card button {
 .comparison-section h2 {
     font-size: 1rem;
     color: blue;
+    letter-spacing: 0.08em;
 }
 
 .testimonials-section h1,
@@ -940,6 +957,7 @@ body.dark .price-card.selected-card button {
 .cta-section h2 {
     color: blue;
     font-size: 1rem;
+    letter-spacing: 0.08em;
 }
 
 .cta-section h1 {
@@ -1229,7 +1247,7 @@ body.dark .modal-box #modal-form .input-group textarea {
 }
 
 body.dark .modal-header h1 {
-    color: blue;
+    color: white;
 }
 
 body.dark #sun-icon {
@@ -1406,8 +1424,6 @@ body.dark .hero-section #btn-2:hover {
 }
 
 @media(max-width: 768px) {
-    nav button {}
-
     .hero-section {
         min-height: 50vh;
         padding: 3rem 1.5rem;
@@ -1415,7 +1431,6 @@ body.dark .hero-section #btn-2:hover {
 
     .hero-section h1 {
         font-size: 1.8rem;
-        width: 95%;
     }
 
     .hero-section p {
@@ -1489,7 +1504,7 @@ body.dark .hero-section #btn-2:hover {
     }
 
     #nav-menu.open {
-        max-height: 300px;
+        max-height: 350px;
         padding: 1rem 0;
     }
 
