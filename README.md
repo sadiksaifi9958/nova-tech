@@ -22,9 +22,6 @@ A modern, multi-page business website built with vanilla HTML, CSS, and JavaScri
 - JavaScript — DOM Manipulation, Web APIs, localStorage
 - Font Awesome — icons
 
-## 📸 Screenshots
-![NovaTech Home](./Assets/Home.png)
-
 ## 💡 What I Learned
 Built this project to master JavaScript DOM manipulation and real website functionality. Learned how to use IntersectionObserver, localStorage, dynamic HTML injection with insertAdjacentHTML, CSS specificity, and how to debug JavaScript using browser DevTools.
 
