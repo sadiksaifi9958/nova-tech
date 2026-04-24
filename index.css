@@ -750,3 +750,139 @@ nav {
     font-size: 0.78rem;
     color: rgba(255, 255, 255, 0.3);
 }
+
+.newsletter-section {
+    padding: 0 5% 6rem;
+}
+
+.nl-inner {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 3rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.04);
+}
+
+.nl-tag-pill {
+    display: inline-block;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--green);
+    background: var(--green-pale);
+    border: 1px solid rgba(10, 124, 86, 0.2);
+    padding: 0.3rem 0.85rem;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.nl-heading {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    color: var(--ink);
+    margin-bottom: 0.6rem;
+}
+
+.nl-sub {
+    font-size: 0.9rem;
+    color: var(--muted);
+    line-height: 1.65;
+    font-weight: 300;
+}
+
+.nl-perks {
+    list-style: none;
+    margin-top: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.nl-perks li {
+    font-size: 0.85rem;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.nl-perks li::before {
+    content: '✓';
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--green-pale);
+    border: 1px solid rgba(10, 124, 86, 0.2);
+    color: var(--green);
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.nl-form-label {
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 0.75rem;
+}
+
+.nl-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.nl-input {
+    background: var(--bg);
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    padding: 0.8rem 1rem;
+    color: var(--text);
+    font-size: 0.9rem;
+    font-family: 'DM Sans', sans-serif;
+    outline: none;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.nl-input::placeholder {
+    color: var(--muted);
+}
+
+.nl-input:focus {
+    border-color: var(--blue);
+    background: var(--surface);
+}
+
+.btn-sub {
+    background: var(--blue);
+    color: #fff;
+    border: none;
+    padding: 0.85rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+}
+
+.btn-sub:hover {
+    background: var(--blue-soft);
+    transform: translateY(-1px);
+}
+
+.nl-disclaimer {
+    font-size: 0.75rem;
+    color: var(--muted2);
+    margin-top: 0.5rem;
+    text-align: center;
+}
