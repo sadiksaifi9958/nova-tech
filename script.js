@@ -271,9 +271,9 @@ if (modalForm) {
 
 
 
-let newsletterForm = document.getElementById("newsletter-form");
+let newsletterForm = document.querySelector(".nl-form")
 let subscribeSuccessMsg = document.querySelector(".subscribe-success-message")
-let userEmail = document.querySelector(".newsletter-input");
+let userEmail = document.querySelector(".nl-input");
 
 newsletterForm.addEventListener("submit", function (e) {
     e.preventDefault();

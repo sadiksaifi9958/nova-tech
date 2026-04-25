@@ -997,3 +997,206 @@ footer {
     border-color: var(--blue);
     color: var(--blue);
 }
+
+#modal-overlay {
+    position: fixed;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    Z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+#modal-overlay.get-started {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-box {
+    background: var(--surface);
+    border-radius: 20px;
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid var(--border);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+    transform: translateY(30px);
+    transition: transform 0.3s ease;
+}
+
+#modal-overlay.get-started .modal-box {
+    transform: translateY(0);
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.5rem;
+}
+
+.modal-headings h1 {
+    font-family: 'Syne', sans-serif;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+}
+
+.modal-headings p {
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-top: 0.3rem;
+}
+
+.contact-form-close-button {
+    background: none;
+    border: 1.5px solid var(--border2);
+    border-radius: 8px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    color: var(--muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: background 0.2s ease;
+}
+
+.contact-form-close-button:hover {
+    background: var(--bg);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.input-group label {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.input-group input,
+.input-group textarea {
+    background: var(--bg);
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    padding: 0.75rem 1rem;
+    font-size: 0.9rem;
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: var(--blue);
+}
+
+#submit {
+    width: 100%;
+    background: var(--blue);
+    color: #fff;
+    border: none;
+    padding: 0.85rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    margin-top: 0.85rem;
+    transition: background 0.2s, transform 0.15s;
+}
+
+#submit:hover {
+    background: var(--blue-soft);
+    transform: translateY(-1px);
+}
+
+@media (max-width: 900px) {
+    .hero-content {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-right {
+        display: none;
+    }
+
+    .features-header {
+        grid-template-columns: 1fr;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cta-inner {
+        flex-direction: column;
+        padding: 2.5rem 2rem;
+    }
+
+    .nl-inner {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    #nav-links {
+        max-height: 0;
+        overflow: hidden;
+        flex-direction: column;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        background: var(--bg);
+        transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+
+    .footer-nav-cols {
+        gap: 2rem;
+    }
+
+    #nav-links.open {
+        max-height: 400px;
+        padding: 1rem 5%;
+        border-bottom: 1px solid var(--border);
+    }
+
+    .nav-right .burger {
+        height: 38px;
+        width: 38px;
+        border-radius: 8px;
+        border: 1px solid var(--border2);
+        background: transparent;
+        color: var(--muted);
+        font-size: 0.9rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #nav-links button {
+        display: flex;
+    }
+
+    .header-get-started-btn {
+        display: none;
+    }
+}
