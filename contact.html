@@ -7,105 +7,143 @@
     <title>Contact - NovaTech</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">Nova<span style="color: blue">Tech</span></div>
-        <nav id="nav-menu">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="about.html">About us</a>
-            <a class="nav-link" href="pricing.html">Pricing</a>
-            <a class="nav-link" href="contact.html">Contact us</a>
-            <button class="get-started-btn header-get-started-btn" id="mobile-getstarted-btn">Get Started</button>
-        </nav>
-
-        <div class="toggle-group">
-            <button class="day-night-mode"><i class="fa-solid fa-moon" id="moon-icon"></i>
-                <i class="fa-solid fa-sun" style="display: none" id="sun-icon"></i></button></button>
+    <nav>
+        <a class="logo" href="#">Nova<span>Tech</span></a>
+        <ul id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><button class="get-started-btn header-get-started-btn" id="mobile-getstarted-btn">Get Started</button>
+            </li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-btn"><i class="fa-solid fa-moon" id="moon-icon"></i>
+                <i class="fa-solid fa-sun" style="display: none" id="sun-icon"></i></button>
             <button class="burger" id="burger-btn"><i class="fa-solid fa-bars"></i></button>
             <button class="get-started-btn header-get-started-btn">Get Started</button>
         </div>
+    </nav>
 
-    </header>
-    <div class="contact-page-headings reveal">
-        <h3 class="reveal">GET IN TOUCH</h3>
-        <h1 class="reveal">We'd love to hear from you</h1>
-    </div>
-
-    <div class="input-groups-and-contact-info">
-        <div class="contact-inputs">
-            <form id="contact-page-form">
-                <div class="input-box reveal">
-                    <label for="Full-Name">Full Name</label>
-                    <input type="text" id="Full-Name" name="user-name">
-                    <span class="error"></span>
-                </div>
-
-                <div class="input-box reveal">
-                    <label for="Email-Address">Email Address</label>
-                    <input type="text" id="Email-Address" name="user-email">
-                    <span class="error"></span>
-                </div>
-
-                <div class="input-box reveal">
-                    <label for="Subject">Subject</label>
-                    <input type="text" id="Subject" name="user-subject">
-                    <span class="error"></span>
-                </div>
-
-                <div id="Message-input" class="input-box reveal">
-                    <label for="Message">Message</label>
-                    <textarea id="Message" rows="5" name="user-message"></textarea>
-                    <span class="error"></span>
-                </div>
-                <span class="success-message"></span>
-                <button class="reveal" id="submit" type="submit">Send Message</button>
-            </form>
-        </div>
-        <div class="contact-info">
-            <div class="email-info reveal">
-                <p><b>Email us</b></p>
-                <a href="mailto:sadikconceptdesigner@gmail.com">hello@novatech.com</a>
-            </div>
-
-            <div class="phone-number-info reveal">
-                <p><b>Call us</b></p>
-                <p>91+ 995 857 3541</p>
-            </div>
-
-            <div class="location-info reveal">
-                <p><b>Location</b></p>
-                <p>Faridabad, India</p>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer">
-            <div class="logo-socials">
-                <div id="logo" class="logo-in-footer">Nova<span style="color: blue">Tech</span></div>
-                <div class="socials-in-footer">
-                    <a><i class="fa-brands fa-github"></i></a>
-                    <a><i class="fa-brands fa-twitter"></i></a>
-                    <a><i class="fa-brands fa-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-        <p class="copyright-text">
-            <a><i class="fa-regular fa-copyright"></i></a>
-            2026 NovaTech. All rights reserved.
+    <section class="page-hero">
+        <div class="page-tag">Get in touch</div>
+        <h1>We'd love to hear from you</h1>
+        <p>Have a project in mind or just want to say hello? Fill in the form and we'll get back to you within 24 hours.
         </p>
-        <div class="policies">
-            <a href="./Policy Pages/policy.html">Privacy Policy</a>
-            &middot;
-            <a href="./Policy Pages/term.html">Terms of service</a>
-            &middot;
-            <a href="./Policy Pages/cookie.html">Cookie Policy</a>
+    </section>
+
+    <section class="contact-section">
+        <div class="contact-grid">
+
+            <div class="contact-info">
+                <div class="info-card">
+                    <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div>
+                        <div class="info-label">Email us</div>
+                        <a class="info-value" href="mailto:hello@novatech.com">hello@novatech.com</a>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div>
+                        <div class="info-label">Call us</div>
+                        <div class="info-value">+91 995 857 3541</div>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div>
+                        <div class="info-label">Location</div>
+                        <div class="info-value">Faridabad, India</div>
+                    </div>
+                </div>
+                <div class="response-card">
+                    <div class="response-title">Quick response guaranteed</div>
+                    <p class="response-text">We typically respond to all enquiries within 24 hours on business days.</p>
+                    <div class="response-badge">
+                        <span class="response-dot"></span>
+                        Available now
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-card">
+                <div class="form-title">Send us a message</div>
+                <p class="form-sub">Fill in your details and we'll get back to you as soon as possible.</p>
+                <form id="contact-page-form">
+                    <div class="form-row">
+                        <div class="input-group">
+                            <label for="Full-Name">Full Name</label>
+                            <input type="text" id="Full-Name" name="user-name" placeholder="Your full name">
+                            <span class="error"></span>
+                        </div>
+                        <div class="input-group">
+                            <label for="Email-Address">Email Address</label>
+                            <input type="text" id="Email-Address" name="user-email" placeholder="you@example.com">
+                            <span class="error"></span>
+                        </div>
+                    </div>
+                    <div class="input-group full">
+                        <label for="Subject">Subject</label>
+                        <input type="text" id="Subject" name="user-subject" placeholder="What is this about?">
+                        <span class="error"></span>
+                    </div>
+                    <div class="input-group full">
+                        <label for="Message">Message</label>
+                        <textarea id="Message" rows="5" name="user-message"
+                            placeholder="Tell us about your project..."></textarea>
+                        <span class="error"></span>
+                    </div>
+                    <span class="success-message"></span>
+                    <button class="submit-btn" id="submit" type="submit">Send Message →</button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <div class="footer-top">
+            <div>
+                <a class="footer-logo" href="#">Nova<span>Tech</span></a>
+                <p class="footer-tagline">Building digital experiences that drive real growth.</p>
+            </div>
+            <div class="footer-nav-cols">
+                <div>
+                    <div class="footer-col-title">Company</div>
+                    <ul class="footer-col-links">
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-col-title">Legal</div>
+                    <ul class="footer-col-links">
+                        <li><a href="./Policy Pages/policy.html">Privacy Policy</a></li>
+                        <li><a href="./Policy Pages/term.html">Terms of Service</a></li>
+                        <li><a href="./Policy Pages/cookie.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">© 2026 NovaTech. All rights reserved.</p>
+            <div class="footer-social">
+                <button class="soc-btn"><a><i class="fa-brands fa-github"></i></a></button>
+                <button class="soc-btn"><a><i class="fa-brands fa-twitter"></i></a></button>
+                <button class="soc-btn"><a><i class="fa-brands fa-linkedin"></i></a></button>
+            </div>
         </div>
     </footer>
-    <button class="back-to-top">↑</button>
+    <!-- <button class="back-to-top">↑</button> -->
     <script src="script.js"></script>
 </body>
 
