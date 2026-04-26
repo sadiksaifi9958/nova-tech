@@ -1345,17 +1345,18 @@ footer {
     border-bottom: 1px solid var(--border);
 }
 
-.section-header{
+/* .section-header{
     margin-bottom: 3.5rem;
-}
+} */
 
 .value-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.25rem;
+    margin-top: 3rem;
 }
 
-.value-card{
+.value-card{    
     background: var(--bg);
     border: 1px solid var(--border);
     border-radius: 16px;
@@ -1451,6 +1452,367 @@ footer {
     font-size: 0.875rem;
     color: var(--muted);
     line-height: 1.65;
+    font-weight: 300;
+}
+
+.pricing-section{
+    padding: 3rem 5% 6rem;
+}
+
+.pricing-grid{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    max-width: 1100px;
+    margin: 0 auto
+}
+
+.price-card{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 2.25rem;
+    display: flex;
+    flex-direction: column;
+    transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+
+.price-card:hover{
+    border-color: rgba(26, 66, 245, 0.3);
+    transform: translateY(-4px);
+    box-shadow: 0 16px 40px rgba(26, 66, 245, 0.08);
+}
+
+.price-card.featured{
+    background: var(--ink);
+    border-color: var(--ink);
+}
+
+.price-card.featured:hover{
+    border-color: var(--blue-soft);
+    box-shadow: 0 16px 40px rgba(26, 66, 245, 0.2)
+}
+
+.featured-badge{
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--blue);
+    color: #fff;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 0.25rem 1rem;
+    border-radius: 20px;
+}
+
+.plan-name{
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--muted);
+    margin-bottom: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.price-card.featured .plan-name{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.plan-price{
+    display: flex;
+    align-items: flex-end;
+    gap: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.price-amount{
+    font-family: 'Syne', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: var(--ink);
+}
+
+.price-card.featured .price-amount{
+    color: #fff;
+}
+
+.price-period{
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 0.4rem;
+}
+
+.price-card.featured .price-period{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.plan-desc{
+    font-size: 0.85rem;
+    color: var(--muted);
+    margin-bottom: 1.75rem;
+    line-height: 1.6;
+}
+
+.price-card.featured .plan-desc{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.price-card.featured .plan-divider{
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.plan-features{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.plan-features li{
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    font-size: 0.875rem;
+    color: var(--text);
+}
+
+.price-card.featured .plan-features li{
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.check-icon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--green-pale);
+    border: 1px solid rgba(10, 124, 86, 0.2);
+    color: var(--green);
+    font-size: 0.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.price-card.featured .check-icon{
+    background: rgba(26, 66, 245, 0.15);
+    border-color: rgba(26, 66, 245, 0.25);
+    color: #7da0ff;
+}
+
+.plan-btn{
+    width: 100%;
+    padding: 0.85rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    border: 1.5px solid var(--border2);
+    background: transparent;
+    color: var(--text);
+    transition: all 0.2s;
+}
+
+.plan-btn:hover{
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+.plan-btn.featured-btn{
+    background: var(--blue);
+    color: #fff;
+    border-color: var(--blue);
+}
+
+.plan-btn.featured-btn:hover{
+    background: var(--blue-soft);
+    border-color: var(--blue-soft);
+    transform:0 8px 20px rgba(26, 66, 245, 0.35);
+}
+
+.guarantee-section{
+    padding: 0 5% 6rem;
+}
+
+.guarantee-inner{
+    background: var(--green-pale);
+    border: 1px solid rgba(10, 124, 86, 0.2);
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.guarantee-icon{
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: rgba(10, 124, 86, 0.1);
+    border: 1px solid rgba(10, 124, 86, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: var(--green);
+    flex-shrink: 0;
+}
+
+.guarantee-title{
+    font-family: 'Syne', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--green);
+    margin-bottom: 0.25rem;
+}
+
+.guarantee-text{
+    font-size: 0.875rem;
+    color: var(--green);
+    opacity: 0.7;
+}
+
+.comparison-section{
+    padding: 6rem 5%;
+    background: var(--surface);
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+
+.comparison-table{
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.comparison-table thead{
+    background: var(--bg);
+}
+
+.comparison-table th{
+    padding: 1.25rem 1.5rem;
+    text-align: center;
+    border-bottom: 1px solid var(--border);
+}
+
+.comparison-table th:first-child{
+    text-align: left;
+}
+
+.comparison-table th h3{
+    font-family: 'Syne', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.comparison-table th p{
+    font-size: 0.8rem;
+    color: var(--muted);
+    margin-top: 0.2rem;
+}
+
+.comparison-table td{
+    padding: 1rem 1.5rem;
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--muted);
+    border-bottom: 1px solid var(--border);
+}
+
+.comparison-table td:first-child{
+    text-align: left;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.comparison-table tr:last-child td{
+    border-bottom: none;
+}
+
+.comparison-table tr:hover td{
+    background:var(--bg);
+}
+
+.check{
+    color: var(--green);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.cross{
+    color: var(--border2);
+    font-size: 1rem;
+}
+
+.comparison-table th:nth-child(3),
+.comparison-table td:nth-child(3){
+    background: var(--blue-pale);
+    color: var(--blue);
+}
+
+.comparison-table td:nth-child(3) .check{
+    color: var(--blue);
+}
+
+
+.faq-section{
+    padding: 6rem 5%;
+}
+
+.faq-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    margin-top: 3rem;
+}
+
+.faq-card{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1.75rem;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.faq-card:hover{
+    border-color: rgba(26, 66, 245, 0.25);
+    transform: translateY(-2px);
+}
+
+.faq-card h3{
+    font-family: 'Syne', sans-serif;
+    font-size: 0.97rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 0.65rem;
+}
+
+.faq-card h3{
+    font-family: 'Syne', sans-serif;
+    font-size: 0.97rem;
+    font-weight: 700;
+    color: var(--ink);
+    margin-bottom: 0.65rem;
+}
+
+.faq-card p{
+    font-size: 0.875rem;
+    color: var(--muted);
+    line-height: 1.7;
     font-weight: 300;
 }
 
