@@ -1099,6 +1099,7 @@ footer {
 .input-group input:focus,
 .input-group textarea:focus {
     border-color: var(--blue);
+    background: var(--surface);
 }
 
 #submit {
