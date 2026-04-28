@@ -103,7 +103,7 @@ nav {
     color: var(--text);
 }
 
-.page-link.active {
+#nav-links a.active {
     color: var(--text);
 }
 
@@ -1330,10 +1330,6 @@ footer {
     border-bottom: 1px solid var(--border);
 }
 
-/* .section-header{
-    margin-bottom: 3.5rem;
-} */
-
 .value-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -2041,9 +2037,17 @@ info-card:hover {
     background: var(--surface);
 }
 
-.error {
+.error,
+.modal-error {
     font-size: 0.78rem;
     color: #ef4444;
+    min-height: 16px;
+}
+
+.success-message,
+.modal-success {
+    font-size: 0.78rem;
+    color: blue;
     min-height: 16px;
 }
 
@@ -2070,7 +2074,7 @@ info-card:hover {
 
 .success-message {
     font-size: 0.85rem;
-    color: var(--green);
+    color: var(--blue-soft);
     text-align: center;
     display: block;
     margin-top: 0.5rem;
@@ -2086,6 +2090,38 @@ info-card:hover {
     opacity: 1;
     transform: translateY(0);
 
+}
+
+.back-to-top {
+    background-color: blue;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    height: 2rem;
+    width: 2rem;
+    font-size: 1rem;
+    display: flex;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#back-to-top:active {
+    opacity: 0.7;
+}
+
+.visible-back-to-top {
+    opacity: 1;
+    visibility: visible;
 }
 
 
