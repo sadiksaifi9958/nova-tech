@@ -2093,36 +2093,6 @@ body.dark {
     --green-pale: rgba(83, 211, 164, 0.14);
 }
 
-
-/* body.dark .cta-inner,
-body.dark .mission-inner {
-    background: #f3f6ff;
-}
-
-body.dark .cta-heading,
-body.dark .mission-heading,
-body.dark .mission-point-title {
-    color: #11182b;
-}
-
-body.dark .cta-sub,
-body.dark .mission-text,
-body.dark .mission-point-text {
-    color: #4f5d78;
-}
-
-body.dark .cta-note {
-    color: #6b7892;
-}
-
-body.dark .mission-right div {
-    border-color: #4f5d78;
-}
-
-body.dark .featured-badge {
-    background: #1a42f5;
-} */
-
 .cta-tag,
 .mission-tag {
     color: #7da0ff;
