@@ -7,121 +7,181 @@
     <title>Home - NovaTech</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">Nova<span style="color: blue">Tech</span></div>
-        <nav id="nav-menu">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="about.html">About us</a>
-            <a class="nav-link" href="pricing.html">Pricing</a>
-            <a class="nav-link" href="contact.html">Contact us</a>
-            <button class="get-started-btn header-get-started-btn" id="mobile-getstarted-btn">Get Started</button>
-        </nav>
-
-        <div class="toggle-group">
-            <button class="day-night-mode"><i class="fa-solid fa-moon" id="moon-icon"></i>
+    <nav>
+        <a class="logo" href="#">Nova<span>Tech</span></a>
+        <ul id="nav-links">
+            <li><a class="page-link" href="index.html">Home</a></li>
+            <li><a class="page-link" href="about.html">About us</a></li>
+            <li><a class="page-link" href="pricing.html">Pricing</a></li>
+            <li><a class="page-link" href="contact.html">Contact us</a></li>
+            <li><button class="get-started-btn header-get-started-btn" id="mobile-getstarted-btn">Get Started</button>
+            </li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-btn"><i class="fa-solid fa-moon" id="moon-icon"></i>
                 <i class="fa-solid fa-sun" style="display: none" id="sun-icon"></i></button>
             <button class="burger" id="burger-btn"><i class="fa-solid fa-bars"></i></button>
             <button class="get-started-btn header-get-started-btn">Get Started</button>
         </div>
+    </nav>
 
-    </header>
-    <div class="hero-section">
-        <h1 class="reveal">Building Digital Experiences That <span class="accent-text">Drive Growth</span></h1>
-        <p class="reveal">We design and build high-performance websites that attract visitors, convert leads, and grow
-            your business</p>
-        <div class="hero-buttons">
-            <button id="btn-1" class="get-started-btn reveal">Get Started</button>
-            <button id="btn-2" class="reveal">Watch Demo →</button>
-        </div>
-    </div>
-    <div class="feature-section reveal">
-        <div class="feature-section-heading">
-            <h2 class="feat-heading-1 reveal">OUR FEATURES</h2>
-            <h1 class="feat-heading-2 reveal">Powerful Tools for Your Business</h1>
-            <p class="feature-para reveal">Everything you need to grow online.</p>
-        </div>
-        <div class="feature-cards">
-            <div class="card reveal">
-                <i class="fa-solid fa-clock"></i>
-                <h2>Fast Performance</h2>
-                <p>Optimised websites that load quickly and keep users engaged.</p>
-            </div>
-            <div class="card reveal">
-                <i class="fa-solid fa-desktop"></i>
-                <h2>Responsive Design</h2>
-                <p>Beautiful layouts that work perfectly on mobile, tablet and desktop.</p>
-            </div>
-            <div class="card reveal">
-                <i class="fa-solid fa-shield"></i>
-                <h2>Secure & Reliable</h2>
-                <p>Built with modern technologies to keep your website safe 24/7.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="testimonials-section reveal">
-        <div class="testimonials-headings">
-            <h2 class="reveal">TESTIMONIALS</h2>
-            <h1 class="reveal">What our clients say</h1>
-            <p class="testimonials-para reveal">Real feedback from real businesses we have helped grow.</p>
-        </div>
-        <div class="testimonials-cards">
-            <div class="card-in-testimonials reveal">
-                <div class="stars">
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
+    <section class="hero-section">
+        <div class="hero-content">
+            <div class="hero-left reveal">
+                <div class="hero-badge"><span class="badge-dot"></span> Now live for all businesses</div>
+                <h1 class="hero-heading reveal">Building Digital Experiences That <span class="accent-text">Drive
+                        Growth</span></h1>
+                <p class="hero-sub reveal">We design and build high-performance websites that attract visitors, convert
+                    leads,
+                    and grow your business</p>
+                <div class="hero-actions reveal">
+                    <button id="btn-1" class="btn-hero get-started-btn">Get Started →</button>
+                    <button id="btn-2" class="btn-demo reveal"><span class="demo-icon">▶</span>Watch Demo</button>
                 </div>
-                <p class="para-in-testimonials-card">"NovaTech transformed our online presence. Our website loads faster
-                    and looks stunning on every
-                    device."</p>
-                <div class="testimonial-author">
-                    <div class="avatar">AK</div>
+                <div class="hero-trust reveal">
+                    <div class="trust-avatars reveal">
+                        <span></span><span></span><span></span><span></span>
+                    </div>
+                    <p class="trust-text reveal">Trusted by <strong>100+ businesses</strong> worldwide</p>
+                </div>
+            </div>
+
+            <div class="hero-right ">
+                <div class="hero-card reveal">
+                    <div class="card-topbar">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="card-metric-grid">
+                        <div class="metric-box reveal">
+                            <div class="metric-label">Monthly Visitors</div>
+                            <div class="metric-val blue">48.2k</div>
+                            <div class="metric-change">↑ +24% this month</div>
+                        </div>
+                        <div class="metric-box reveal">
+                            <div class="metric-label">Conversion Rate</div>
+                            <div class="metric-val green">6.8%</div>
+                            <div class="metric-change">↑ +1.2% vs last</div>
+                        </div>
+                        <div class="metric-box reveal">
+                            <div class="metric-label">Load Time</div>
+                            <div class="metric-val gold">0.8s</div>
+                            <div class="metric-change" style="color:var(--gold)">↓ 40% faster</div>
+                        </div>
+                        <div class="metric-box reveal">
+                            <div class="metric-label">Uptime</div>
+                            <div class="metric-val purple">99.9%</div>
+                            <div class="metric-change" style="color:#7c3aed">Last 90 days</div>
+                        </div>
+                        <div class="card-bar-row reveal">
+                            <div>
+                                <div class="bar-label-row reveal"><span>Performance</span><span>96/100</span></div>
+                                <div class="bar-track">
+                                    <div class="bar-fill" style="width: 96%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bar-label-row reveal"><span>SEO Score</span><span>91/100</span></div>
+                                <div class="bar-track">
+                                    <div class="bar-fill green" style="width: 91%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="bar-label-row reveal"><span>Accessibility</span><span>88/100</span></div>
+                                <div class="bar-track">
+                                    <div class="bar-fill purple" style="width: 88%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="features-header reveal">
+            <div>
+                <div class="section-tag">OUR FEATURES</div>
+                <h2 class="section-heading">Powerful Tools for <br>Your Business</h2>
+            </div>
+            <p class="section-sub">Everything you need to build, grow, and scale your digital presence — all in
+                one place.</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <i class="fa-solid fa-clock feature-icon"></i>
+                <h2 class="feature-title">Fast Performance</h2>
+                <p class="feature-desc">Optimised websites that load quickly and keep users engaged.</p>
+            </div>
+            <div class="feature-card reveal">
+                <i class="fa-solid fa-desktop feature-icon"></i>
+                <h2 class="feature-title">Responsive Design</h2>
+                <p class="feature-desc">Beautiful layouts that work perfectly on mobile, tablet and desktop.</p>
+            </div>
+            <div class="feature-card reveal">
+                <i class="fa-solid fa-shield feature-icon"></i>
+                <h2 class="feature-title">Secure & Reliable</h2>
+                <p class="feature-desc">Built with modern technologies to keep your website safe 24/7.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="testimonials-headings reveal">
+            <div class="section-tag">TESTIMONIALS</div>
+            <h2 class="section-heading">What our clients say</h2>
+            <p class="section-sub">Real feedback from real businesses we have helped grow.</p>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testi-card reveal">
+                <div class="testi-stars">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                        class="star">★</span><span class="star">★</span>
+                </div>
+                <p class="testi-quote">"NovaTech transformed our online presence. Our website loads faster and looks
+                    stunning on every device."</p>
+                <div class="testi-author">
+                    <div class="author-avatar" style="background:linear-gradient(135deg,#1a42f5,#6080ff)">AK</div>
                     <div>
                         <p class="author-name"><b>Arjun Kumar</b></p>
                         <p class="author-role">CEO, TechStart India</p>
                     </div>
                 </div>
             </div>
-            <div class="card-in-testimonials reveal">
-                <div class="stars">
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
+            <div class="testi-card reveal">
+                <div class="testi-stars">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                        class="star">★</span><span class="star">★</span>
                 </div>
-                <p class="para-in-testimonials-card">"Professional, fast and incredibly responsive. They delivered
-                    beyond our expectations every step of the way."</p>
-                <div class="testimonial-author">
-                    <div class="avatar">SP</div>
+                <p class="testi-quote">"Professional, fast and incredibly responsive. They delivered beyond our
+                    expectations every step of the way."</p>
+                <div class="testi-author">
+                    <div class="author-avatar" style="background:linear-gradient(135deg,#7c3aed,#c4b5fd)">SP</div>
                     <div>
                         <p class="author-name"><b>Sara Patel</b></p>
                         <p class="author-role">Founder, GrowthBox</p>
                     </div>
                 </div>
             </div>
-            <div class="card-in-testimonials reveal">
-                <div class="stars">
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
-                    <span>★</span>
+            <div class="testi-card reveal">
+                <div class="testi-stars">
+                    <span class="star">★</span><span class="star">★</span><span class="star">★</span><span
+                        class="star">★</span><span class="star">★</span>
                 </div>
-                <p class="para-in-testimonials-card">"Working with NovaTech was a great experience. They understood our
-                    vision and built exactly what we
-                    needed."</p>
-                <div class="testimonial-author">
-                    <div class="avatar">MD</div>
+                <p class="testi-quote">"Working with NovaTech was a great experience. They understood our vision and
+                    built exactly what we needed."</p>
+                <div class="testi-author">
+                    <div class="author-avatar" style="background:linear-gradient(135deg,#0a7c56,#34d399)">MR</div>
                     <div>
                         <p class="author-name"><b>Mohammed Raza</b></p>
                         <p class="author-role">MD, Raza Enterprises</p>
@@ -129,48 +189,81 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-    <div class="cta-section reveal">
-        <h2 class="reveal">GET STARTED TODAY</h2>
-        <h1 class="reveal">Ready to grow your business online?</h1>
-        <p class="reveal">Let's build something great together. Join 100+ businesses already growing with NovaTech.</p>
-        <button class="cta-btn get-started-btn class=" reveal"">Get Started →</button>
-    </div>
+    <section class="cta-section">
+        <div class="cta-inner reveal">
+            <div class="cta-text reveal">
+                <div class="section-tag cta-tag">Get Started Today</div>
+                <h2 class="cta-heading">Ready to grow your <span class="accent">business online?</span></h2>
+                <p class="cta-sub">Let's build something great together. Join 100+ businesses already growing
+                    with
+                    NovaTech.
+                </p>
+            </div>
+            <div class="cta-actions reveal">
+                <button class="cta-btn get-started-btn">Get Started →</button>
+                <p class="cta-note">No setup fee · Cancel anytime</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="newsletter-section">
-        <h3>NEWSLETTER</h3>
-        <h2>Get the latest updates on tech trends.</h2>
-        <form id="newsletter-form">
-            <input type="text" name="user_email" class="newsletter-input" placeholder="Enter your email">
-            <button type="submit">Subscribe</button>
-        </form>
-        <span class="subscribe-success-message"></span>
-        <p>No spam, unsubscribe anytime.</p>
-    </div>
+    <section class="newsletter-section">
+        <div class="nl-inner reveal">
+            <div class="nl-left reveal">
+                <div class="nl-tag-pill">NEWSLETTER</div>
+                <h3 class="nl-heading">Stay ahead of<br>the tech curve.</h3>
+                <p class="nl-sub">Get weekly insights on tech trends and growth strategies — straight to your inbox.</p>
+                <ul class="nl-perks">
+                    <li>Weekly curated tech insights</li>
+                    <li>Early access to new features</li>
+                    <li>No spam, unsubscribe anytime</li>
+                </ul>
+            </div>
+            <div class="nl-right reveal">
+                <p class="nl-form-label reveal">Join 2,000+ subscribers already reading.</p>
+                <form class="nl-form reveal">
+                    <input class="nl-input" type="text" placeholder="Your name">
+                    <input class="nl-input" type="email" placeholder="Enter your email address">
+                    <button class="btn-sub">Subscribe — it's free</button>
+                    <span class="success-message"></span>
+                </form>
+                <p class="nl-disclaimer reveal">No spam. Unsubscribe anytime.</p>
+            </div>
+    </section>
 
     <footer>
-        <div class="footer">
-
-            <div class="logo-socials">
-                <div id="logo" class="logo-in-footer">Nova<span style="color: blue">Tech</span></div>
-                <div class="socials-in-footer">
-                    <a><i class="fa-brands fa-github"></i></a>
-                    <a><i class="fa-brands fa-twitter"></i></a>
-                    <a><i class="fa-brands fa-linkedin"></i></a>
+        <div class="footer-top">
+            <div>
+                <a class="footer-logo" href="#">Nova<span>Tech</span></a>
+                <p class="footer-tagline">Building digital experiences that drive real growth.</p>
+            </div>
+            <div class="footer-nav-cols">
+                <div>
+                    <div class="footer-col-title">Company</div>
+                    <ul class="footer-col-links">
+                        <li><a class="page-link" href="about.html">About us</a></li>
+                        <li><a class="page-link" href="pricing.html">Pricing</a></li>
+                        <li><a class="page-link" href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-col-title">Legal</div>
+                    <ul class="footer-col-links">
+                        <li><a href="./Policy Pages/policy.html">Privacy Policy</a></li>
+                        <li><a href="./Policy Pages/term.html">Terms of Service</a></li>
+                        <li><a href="./Policy Pages/cookie.html">Cookie Policy</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <p class="copyright-text">
-            <a><i class="fa-regular fa-copyright"></i></a>
-            2026 NovaTech. All rights reserved.
-        </p>
-        <div class="policies">
-            <a href="./Policy Pages/policy.html">Privacy Policy</a>
-            &middot;
-            <a href="./Policy Pages/term.html">Terms of service</a>
-            &middot;
-            <a href="./Policy Pages/cookie.html">Cookie Policy</a>
+        <div class="footer-bottom">
+            <p class="footer-copy">© 2026 NovaTech. All rights reserved.</p>
+            <div class="footer-social">
+                <button class="soc-btn"><a><i class="fa-brands fa-github"></i></a></button>
+                <button class="soc-btn"><a><i class="fa-brands fa-twitter"></i></a></button>
+                <button class="soc-btn"><a><i class="fa-brands fa-linkedin"></i></a></button>
+            </div>
         </div>
     </footer>
     <button class="back-to-top">↑</button>

@@ -35,27 +35,10 @@ document.body.insertAdjacentHTML("beforeend", `
     </div>`);
 
 let burgerButton = document.getElementById("burger-btn");
-let navMenu = document.getElementById("nav-menu");
+let navMenu = document.getElementById("nav-links");
 
 burgerButton.addEventListener("click", function () {
     navMenu.classList.toggle("open");
-});
-
-let cards = document.querySelectorAll(".price-card");
-let cardButton = document.querySelectorAll(".card-button");
-
-cards.forEach(function (card) {
-    card.addEventListener("click", function () {
-        cards.forEach(function (c) {
-            c.classList.remove("selected-card");
-        })
-        card.classList.add("selected-card");
-    })
-});
-cardButton.forEach(function (btn) {
-    btn.addEventListener("click", function (e) {
-        e.stopPropagation();
-    });
 });
 
 let modal = document.getElementById("modal-overlay");
@@ -103,7 +86,7 @@ revealElements.forEach(function (el) {
     observer.observe(el);
 });
 
-let activeNav = document.querySelectorAll(".nav-link");
+let activeNav = document.querySelectorAll(".page-link");
 
 activeNav.forEach(function (link) {
     let href = link.getAttribute("href");
@@ -112,7 +95,7 @@ activeNav.forEach(function (link) {
     }
 });
 
-let darkModeSwitch = document.querySelector(".day-night-mode");
+let darkModeSwitch = document.querySelector(".theme-btn");
 let body = document.querySelector("body");
 
 let savedTheme = localStorage.getItem("theme");
@@ -208,15 +191,6 @@ if (contactForm) {
     )
 }
 
-let searchBtn = document.querySelector(".search-btn");
-let searchInput = document.querySelector(".search-input");
-
-if (searchBtn) {
-    searchBtn.addEventListener("click", function () {
-        searchInput.classList.toggle("visible-search-input");
-    });
-}
-
 let modalName = document.getElementById("name");
 let modalEmail = document.getElementById("email");
 let modalMessage = document.getElementById("modal-message");
@@ -269,42 +243,44 @@ if (modalForm) {
     })
 };
 
+let newsletterForm = document.querySelector(".nl-form")
+let subscribeSuccessMsg = document.querySelector(".success-message")
+let userEmail = document.querySelector(".nl-input");
 
-
-let newsletterForm = document.getElementById("newsletter-form");
-let subscribeSuccessMsg = document.querySelector(".subscribe-success-message")
-let userEmail = document.querySelector(".newsletter-input");
-
-newsletterForm.addEventListener("submit", function (e) {
-    e.preventDefault();
-    emailjs.send("service_7zcj7he", "template_26f79k9", {
-        user_email: userEmail.value
-    }).then(function () {
-        subscribeSuccessMsg.textContent = "subscribed successfully";
-        newsletterForm.reset();
-    }).catch((error) => {
-        console.log(error)
-        subscribeSuccessMsg.style.color = "red";
-        subscribeSuccessMsg.textContent = "subscribed successfully";
-    })
-});
+if (newsletterForm) {
+    newsletterForm.addEventListener("submit", function (e) {
+        e.preventDefault();
+        emailjs.send("service_7zcj7he", "template_26f79k9", {
+            user_email: userEmail.value
+        }).then(function () {
+            subscribeSuccessMsg.textContent = "subscribed successfully";
+            newsletterForm.reset();
+        }).catch((error) => {
+            console.log(error)
+            subscribeSuccessMsg.style.color = "red";
+            subscribeSuccessMsg.textContent = "not subscribed";
+        })
+    });
+}
 
 let backToTopBtn = document.querySelector(".back-to-top");
 
-window.addEventListener("scroll", function () {
-    if (window.scrollY > 400) {
-        backToTopBtn.classList.add("visible-back-to-top");
-    } else {
-        backToTopBtn.classList.remove("visible-back-to-top");
+if (backToTopBtn) {
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 400) {
+            backToTopBtn.classList.add("visible-back-to-top");
+        } else {
+            backToTopBtn.classList.remove("visible-back-to-top");
 
-    }
-});
+        }
+    });
 
-backToTopBtn.addEventListener("click",
-    function () {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        })
-    }
-);
+    backToTopBtn.addEventListener("click",
+        function () {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            })
+        }
+    );
+}

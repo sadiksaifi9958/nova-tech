@@ -6,161 +6,211 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About us - NovaTech</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">Nova<span style="color: blue">Tech</span></div>
-        <nav id="nav-menu">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="about.html">About us</a>
-            <a class="nav-link" href="pricing.html">Pricing</a>
-            <a class="nav-link" href="contact.html">Contact us</a>
-            <button class="get-started-btn header-get-started-btn" id="mobile-getstarted-btn">Get Started</button>
-        </nav>
-        <div class="toggle-group">
-            <button class="day-night-mode">
-                <i class="fa-solid fa-moon" id="moon-icon"></i>
-                <i class="fa-solid fa-sun" style="display: none" id="sun-icon"></i>
-            </button>
+    <nav>
+        <a class="logo" href="#">Nova<span>Tech</span></a>
+        <ul id="nav-links">
+            <li><a class="page-link" href="index.html">Home</a></li>
+            <li><a class="page-link" href="about.html">About us</a></li>
+            <li><a class="page-link" href="pricing.html">Pricing</a></li>
+            <li><a class="page-link" href="contact.html">Contact us</a></li>
+            <li><button class="get-started-btn header-get-started-btn" id="mobile-getstarted-btn">Get Started</button>
+            </li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-btn"><i class="fa-solid fa-moon" id="moon-icon"></i>
+                <i class="fa-solid fa-sun" style="display: none" id="sun-icon"></i></button>
             <button class="burger" id="burger-btn"><i class="fa-solid fa-bars"></i></button>
             <button class="get-started-btn header-get-started-btn">Get Started</button>
         </div>
+    </nav>
 
-    </header>
+    <section class="page-hero reveal">
+        <div class="page-hero-inner reveal">
+            <div class="page-tag">Who we are</div>
+            <h1>We are Nova<span>Tech</span></h1>
+            <p>A team of passionate developers and designers helping businesses build powerful digital presences that
+                attract visitors, convert leads, and drive real growth.</p>
+        </div>
+    </section>
 
-    <div class="who-we-are-section reveal">
-        <h2 class="reveal">WHO WE ARE</h2>
-        <h1 class="reveal">We are NovaTech</h1>
-        <p class="reveal">A team of passionate developers and designers helping businesses build their digital presence.
-        </p>
-    </div>
-    <div class="our-stats-section reveal">
-        <h2 class="reveal">OUR STATS</h2>
-        <div class="stats-cards reveal">
-            <div class="stats-card">
-                <h2>50+</h2>
-                <p>Projects</p>
+    <section class="stats-section reveal">
+        <div class="stats-grid reveal">
+            <div class="stat-card reveal">
+                <div class="stat-num">50<span>+</span></div>
+                <div class="stat-label">Projects completed</div>
             </div>
-            <div class="stats-card">
-                <h2>100+</h2>
-                <p>Clients</p>
+            <div class="stat-card reveal">
+                <div class="stat-num">100<span>+</span></div>
+                <div class="stat-label">Happy clients</div>
             </div>
-            <div class="stats-card">
-                <h2>5yrs</h2>
-                <p>Experience</p>
+            <div class="stat-card reveal">
+                <div class="stat-num">5<span>yrs</span></div>
+                <div class="stat-label">Industry experience</div>
             </div>
         </div>
-    </div>
-    <div class="our-mission-section reveal">
-        <h2 class="reveal">OUR MISSION</h2>
-        <h1 class="reveal">Built for business growth</h1>
-        <p class="reveal">We believe every business deserves a powerful online presence. Our mission is to make that
-            possible through
-            smart, affordable, and beautiful web solutions.</p>
-    </div>
+    </section>
 
-    <div class="value-section">
-        <div class="value-section-heading reveal">
-            <h2 class="reveal">OUR VALUES</h2>
-            <h1 class="reveal">What we stand for</h1>
-            <p class="reveal">The principles that guide everything we build.</p>
-        </div>
-        <div class="values-cards">
-            <div class="value-card reveal">
-                <i class="fa-solid fa-bolt"></i>
-                <h2>Speed</h2>
-                <p>We build fast websites and deliver projects on time without compromising quality.</p>
+    <section class="mission-section reveal">
+        <div class="mission-inner reveal">
+            <div class="mission-left reveal">
+                <div class="mission-tag">Our Mission</div>
+                <h2 class="mission-heading">Built for <span>business growth</h2>
+                <p class="mission-text">We believe every business deserves a powerful online presence. Our mission is to
+                    make that possible
+                    through smart, affordable, and beautiful web solutions that actually work.</p>
             </div>
-            <div class="value-card reveal">
-                <i class="fa-solid fa-bullseye"></i>
-                <h2>Precision</h2>
-                <p>Every pixel, every line of code is crafted with attention to detail and purpose.</p>
-            </div>
-            <div class="value-card reveal">
-                <i class="fa-solid fa-handshake"></i>
-                <h2>Trust</h2>
-                <p>We build long term relationships with our clients based on transparency and honesty.</p>
-            </div>
-            <div class="value-card reveal">
-                <i class="fa-solid fa-rocket"></i>
-                <h2>Innovation</h2>
-                <p>We stay ahead of the curve using the latest technologies to deliver modern solutions.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="why-us-section">
-        <div class="why-us-section-heading reveal">
-            <h2 class="reveal">WHY CHOOSE US</h2>
-            <h1 class="reveal">What makes NovaTech different</h1>
-            <p class="reveal">We go beyond just building websites — we build digital experiences that grow your
-                business.</p>
-        </div>
-        <div class="why-us-cards">
-            <div class="why-us-card reveal">
-                <i class="fa-solid fa-lightbulb"></i>
-                <h2>Strategy first approach</h2>
-                <p>We understand your business goals before writing a single line of code. Every decision is backed by
-                    strategy.</p>
-            </div>
-            <div class="why-us-card reveal">
-                <i class="fa-solid fa-mobile-screen"></i>
-                <h2>Mobile first design</i></h2>
-                <p>Over 60% of web traffic comes from mobile. Every website we build looks and works perfectly on all
-                    devices.</p>
-            </div>
-            <div class="why-us-card reveal">
-                <i class="fa-solid fa-code"></i>
-                <h2>Clean code standards</i></h2>
-                <p>We write maintainable, well structured code so your website is easy to update and scale as you grow
-                </p>
-            </div>
-            <div class="why-us-card reveal">
-                <i class="fa-solid fa-shield-halved"></i>
-                <h2>Security built in</h2>
-                <p>Security is not an afterthought. Every project is built with modern security standards from day one.
-                </p>
-            </div>
-            <div class="why-us-card reveal">
-                <i class="fa-solid fa-chart-line"></i>
-                <h2>Performance optimised</h2>
-                <p>Fast loading websites rank higher on Google and convert more visitors into customers.
-                </p>
-            </div>
-            <div class="why-us-card reveal">
-                <i class="fa-solid fa-headset"></i>
-                <h2>Dedicated support</h2>
-                <p>We are with you after launch. Our team provides ongoing support to keep your website running
-                    smoothly.
-                </p>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="footer">
-            <div class="logo-socials">
-                <div id="logo" class="logo-in-footer">Nova<span style="color: blue">Tech</span></div>
-                <div class="socials-in-footer">
-                    <a><i class="fa-brands fa-github"></i></a>
-                    <a><i class="fa-brands fa-twitter"></i></a>
-                    <a><i class="fa-brands fa-linkedin"></i></a>
+            <div class="mission-right reveal">
+                <div class="mission-point reveal">
+                    <div class="mission-point-icon"><i class="fa-solid fa-rocket"></i></div>
+                    <div>
+                        <div class="mission-point-title">Launch faster</div>
+                        <p class="mission-point-text">We deliver projects on time without compromising on quality or
+                            detail.</p>
+                    </div>
+                </div>
+                <div class="mission-point reveal">
+                    <div class="mission-point-icon"><i class="fa-solid fa-chart-line"></i></div>
+                    <div>
+                        <div class="mission-point-title">Grow smarter</div>
+                        <p class="mission-point-text">Every decision we make is backed by strategy and focused on your
+                            business goals..</p>
+                    </div>
+                </div>
+                <div class="mission-point reveal">
+                    <div class="mission-point-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <div>
+                        <div class="mission-point-title">Stay secure</div>
+                        <p class="mission-point-text">Security is built in from day one — not added as an afterthought.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <p class="copyright-text">
-            <a><i class="fa-regular fa-copyright"></i></a>
-            2026 NovaTech. All rights reserved.
-        </p>
-        <div class="policies">
-            <a href="./Policy Pages/policy.html">Privacy Policy</a>
-            &middot;
-            <a href="./Policy Pages/term.html">Terms of service</a>
-            &middot;
-            <a href="./Policy Pages/cookie.html">Cookie Policy</a>
+    </section>
+
+    <section class="values-section">
+        <div class="section-header reveal">
+            <div class="section-tag">Our Values</div>
+            <h2 class="section-heading">What we stand for</h2>
+            <p class="section-sub">The principles that guide everything we build.</p>
+        </div>
+        <div class="value-grid">
+            <div class="value-card reveal">
+                <div class="value-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="title">Speed</div>
+                <p class="value-desc">We build fast websites and deliver projects on time without compromising quality.
+                </p>
+            </div>
+            <div class="value-card reveal">
+                <div class="value-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <div class="title">Precision</div>
+                <p class="value-desc">Every pixel, every line of code is crafted with attention to detail and purpose.
+                </p>
+            </div>
+            <div class="value-card reveal">
+                <div class="value-icon"><i class="fa-solid fa-handshake"></i></div>
+                <div class="title">Trust</div>
+                <p class="value-desc">We build long-term relationships with our clients based on transparency and
+                    honesty.</p>
+            </div>
+            <div class="value-card reveal">
+                <div class="value-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <div class="title">Innovation</div>
+                <p class="value-desc">We stay ahead of the curve using the latest technologies to deliver modern
+                    solutions.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-section">
+        <div class="section-header reveal">
+            <div class="section-tag">Why Choose Us</div>
+            <div class="section-heading why-heading">What makes Nova<span>Tech</span> different</div>
+            <p class="section-sub">We go beyond just building websites — we build digital experiences that grow your
+                business.</p>
+        </div>
+        <div class="why-grid">
+            <div class="why-card reveal">
+                <div class="why-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <div class="why-title">Strategy first approach</div>
+                <p class="why-desc">We understand your business goals before writing a single line of code. Every
+                    decision is backed by strategy.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+                <div class="why-title">Mobile first design</div>
+                <p class="why-desc">Over 60% of web traffic comes from mobile. Every website we build looks and works
+                    perfectly on all devices.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon"><i class="fa-solid fa-code"></i></div>
+                <div class="why-title">Clean code standards</div>
+                <p class="why-desc">We write maintainable, well-structured code so your website is easy to update and
+                    scale as you grow.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                <div class="why-title">Security built in</div>
+                <p class="why-desc">Security is not an afterthought. Every project is built with modern security
+                    standards from day one.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon"><i class="fa-solid fa-chart-line"></i></div>
+                <div class="why-title">Performance optimised</div>
+                <p class="why-desc">Fast loading websites rank higher on Google and convert more visitors into
+                    customers.</p>
+            </div>
+            <div class="why-card reveal">
+                <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
+                <div class="why-title">Dedicated support</div>
+                <p class="why-desc">We are with you after launch. Our team provides ongoing support to keep your website
+                    running smoothly.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-top">
+            <div>
+                <a class="footer-logo" href="#">Nova<span>Tech</span></a>
+                <p class="footer-tagline">Building digital experiences that drive real growth.</p>
+            </div>
+            <div class="footer-nav-cols">
+                <div>
+                    <div class="footer-col-title">Company</div>
+                    <ul class="footer-col-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-col-title">Legal</div>
+                    <ul class="footer-col-links">
+                        <li><a href="./Policy Pages/policy.html">Privacy Policy</a></li>
+                        <li><a href="./Policy Pages/term.html">Terms of Service</a></li>
+                        <li><a href="./Policy Pages/cookie.html">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p class="footer-copy">© 2026 NovaTech. All rights reserved.</p>
+            <div class="footer-social">
+                <button class="soc-btn"><a><i class="fa-brands fa-github"></i></a></button>
+                <button class="soc-btn"><a><i class="fa-brands fa-twitter"></i></a></button>
+                <button class="soc-btn"><a><i class="fa-brands fa-linkedin"></i></a></button>
+            </div>
         </div>
     </footer>
     <button class="back-to-top">↑</button>

@@ -6,86 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - NovaTech</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
 </head>
 
 <body>
-    <header>
-        <div class="logo">Nova<span style="color: blue">Tech</span></div>
-        <nav id="nav-menu">
-            <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="about.html">About us</a>
-            <a class="nav-link" href="pricing.html">Pricing</a>
-            <a class="nav-link" href="contact.html">Contact us</a>
-            <button class="get-started-btn header-get-started-btn" id="mobile-getstarted-btn">Get Started</button>
-        </nav>
-        <div class="toggle-group">
-            <button class="day-night-mode"><i class="fa-solid fa-moon" id="moon-icon"></i>
-                <i class="fa-solid fa-sun" style="display: none" id="sun-icon"></i></button></button>
+    <nav>
+        <a class="logo" href="#">Nova<span>Tech</span></a>
+        <ul id="nav-links">
+            <li><a class="page-link" href="index.html">Home</a></li>
+            <li><a class="page-link" href="about.html">About us</a></li>
+            <li><a class="page-link" href="pricing.html">Pricing</a></li>
+            <li><a class="page-link" href="contact.html">Contact us</a></li>
+            <li><button class="get-started-btn header-get-started-btn" id="mobile-getstarted-btn">Get Started</button>
+            </li>
+        </ul>
+        <div class="nav-right">
+            <button class="theme-btn"><i class="fa-solid fa-moon" id="moon-icon"></i>
+                <i class="fa-solid fa-sun" style="display: none" id="sun-icon"></i></button>
             <button class="burger" id="burger-btn"><i class="fa-solid fa-bars"></i></button>
             <button class="get-started-btn header-get-started-btn">Get Started</button>
         </div>
+    </nav>
 
-    </header>
-    <section class="price-page">
-        <div class="pricing-page-headings reveal">
-            <h3 class="reveal">PRICING PLANS</h3>
-            <h1 class="reveal">Simple, transparent pricing</h1>
-        </div>
-        <div class="price-cards">
-            <div class="price-card reveal">
-                <h2>Basic</h2>
-                <div class="price-card-rate">
-                    <h1>$29</h1>
-                    <h3>/mo</h3>
-                </div>
-                <p>&check; 1 website</p>
-                <p>&check; 5GB Storage</p>
-                <p>&check; Email support</p>
-                <button class="card-button get-started-btn">Get Started</button>
-            </div>
-            <div class="price-card reveal">
-                <h2>Pro</h2>
-                <div class="price-card-rate">
-                    <h1>$79</h1>
-                    <h3>/mo</h3>
-                </div>
-                <p>&check; 5 website</p>
-                <p>&check; 20GB Storage</p>
-                <p>&check; Priority support</p>
-                <button class="card-button get-started-btn">Get Started</button>
-            </div>
-            <div class="price-card reveal">
-                <h2>Enterprise</h2>
-                <div class="price-card-rate">
-                    <h1>$199</h1>
-                    <h3>/mo</h3>
-                </div>
-                <p>&check; unlimited sites</p>
-                <p>&check; 100GB Storage</p>
-                <p>&check; 24/7 support</p>
-                <button class="card-button get-started-btn">Get Started</button>
-            </div>
-        </div>
+    <section class="page-hero reveal">
+        <div class="page-tag">Pricing Plans</div>
+        <h1>Simple, transparent pricing</h1>
+        <p>Choose the plan that fits your business. No hidden fees, no surprises.</p>
+    </section>
 
-        <div class="guarantee-banner reveal">
-            <i class="fa-solid fa-shield-halved"></i>
+    <section class="pricing-section">
+        <div class="pricing-grid">
+
+            <div class="price-card reveal">
+                <div class="plan-name">Basic</div>
+                <div class="plan-price">
+                    <div class="price-amount">$29</div>
+                    <div class="price-period">/mo</div>
+                </div>
+                <p class="plan-desc">Perfect for individuals and small projects just getting started.</p>
+                <div class="plan-divider"></div>
+                <ul class="plan-features">
+                    <li><span class="check-icon">✓</span> 1 website</li>
+                    <li><span class="check-icon">✓</span> 5GB Storage</li>
+                    <li><span class="check-icon">✓</span> Email support</li>
+                </ul>
+                <button class="get-started-btn plan-btn">Get Started</button>
+            </div>
+
+            <div class="price-card featured reveal">
+                <div class="featured-badge">Most Popular</div>
+                <div class="plan-name">Pro</div>
+                <div class="plan-price">
+                    <div class="price-amount">$79</div>
+                    <div class="price-period">/mo</div>
+                </div>
+                <p class="plan-desc">For growing businesses that need more power and flexibility.</p>
+                <div class="plan-divider"></div>
+                <ul class="plan-features">
+                    <li><span class="check-icon">✓</span> 5 websites</li>
+                    <li><span class="check-icon">✓</span> 20GB Storage</li>
+                    <li><span class="check-icon">✓</span> Priority support</li>
+                </ul>
+                <button class="get-started-btn plan-btn featured-btn">Get Started</button>
+            </div>
+
+            <div class="price-card reveal">
+                <div class="plan-name">Enterprise</div>
+                <div class="plan-price">
+                    <div class="price-amount">$199</div>
+                    <div class="price-period">/mo</div>
+                </div>
+                <p class="plan-desc">For large teams and organisations that need unlimited scale.</p>
+                <div class="plan-divider"></div>
+                <ul class="plan-features">
+                    <li><span class="check-icon">✓</span> Unlimited sites</li>
+                    <li><span class="check-icon">✓</span> 100GB Storage</li>
+                    <li><span class="check-icon">✓</span> 24/7 support</li>
+                </ul>
+                <button class="get-started-btn plan-btn">Get Started</button>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="guarantee-section">
+        <div class="guarantee-inner reveal">
+            <div class="guarantee-icon"><i class="fa-solid fa-shield-halved"></i></div>
             <div>
-                <h3>30 day money back guarantee</h3>
-                <p>Not happy? Get a full refund within 30 days — no questions asked.</p>
+                <div class="guarantee-title">30 day money back guarantee</div>
+                <p class="guarantee-text">Not happy? Get a full refund within 30 days — no questions asked.</p>
             </div>
         </div>
+    </section>
 
-        <div class="comparison-section">
-            <div class="comparison-section-heading reveal">
-                <h3 class="reveal">COMPARE PLANS</h3>
-                <h1 class="reveal">Everything you need, nothing you don't</h1>
-                <p class="reveal">See exactly what is included in each plan.</p>
-            </div>
-            <table class="comparison-table">
-                <thead class="table-heading reveal">
+    <section class="comparison-section">
+        <div class="section-header reveal">
+            <div class="section-tag">Compare Plans</div>
+            <h2 class="section-heading">Everything you need, nothing you don't</h2>
+            <p class="section-sub">See exactly what is included in each plan.</p>
+        </div>
+        <table class="comparison-table reveal">
+            <thead>
+                <tr>
                     <th>
                         <h3>Feature</h3>
                     </th>
@@ -101,121 +128,132 @@
                         <h3>Enterprise</h3>
                         <p>$199/mo</p>
                     </th>
-                </thead>
-                <tbody>
-                    <tr class="table-row reveal">
-                        <td>Websites</td>
-                        <td>1</td>
-                        <td>5</td>
-                        <td>unlimited</td>
-                    </tr>
-                    <tr class="table-row reveal">
-                        <td>storage</td>
-                        <td>5GB</td>
-                        <td>20GB</td>
-                        <td>100GB</td>
-                    </tr>
-                    <tr class="table-row reveal">
-                        <td>Email Support</td>
-                        <td><span class="check">&check;</span></td>
-                        <td><span class="check">&check;</span></td>
-                        <td><span class="check">&check;</span></td>
-                    </tr>
-                    <tr class="table-row reveal">
-                        <td>Priority support</td>
-                        <td><span class="cross">&cross;</span></td>
-                        <td><span class="check">&check;</span></td>
-                        <td><span class="check">&check;</span></td>
-                    </tr>
-                    <tr class="table-row reveal">
-                        <td>24/7 support</td>
-                        <td><span class="cross">&cross;</span></td>
-                        <td><span class="cross">&cross;</span></td>
-                        <td><span class="check">&check;</span></td>
-                    </tr>
-                    <tr class="table-row reveal">
-                        <td>Custom domain</td>
-                        <td><span class="cross">&cross;</span></td>
-                        <td><span class="check">&check;</span></td>
-                        <td><span class="check">&check;</span></td>
-                    </tr>
-                    <tr class="table-row reveal">
-                        <td>Analytics</td>
-                        <td><span class="cross">&cross;</span></td>
-                        <td><span class="check">&check;</span></td>
-                        <td><span class="check">&check;</span></td>
-                    </tr>
-                    <tr class="table-row reveal">
-                        <td class="last-row">SEO Tools</td>
-                        <td class="last-row"><span class="cross">&cross;</span></td>
-                        <td class="last-row"><span class="cross">&cross;</span></td>
-                        <td class="last-row"><span class="check">&check;</span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Websites</td>
+                    <td>1</td>
+                    <td>5</td>
+                    <td>Unlimited</td>
+                </tr>
+                <tr>
+                    <td>Storage</td>
+                    <td>5GB</td>
+                    <td>20GB</td>
+                    <td>100GB</td>
+                </tr>
+                <tr>
+                    <td>Email Support</td>
+                    <td><span class="check">✓</span></td>
+                    <td><span class="check">✓</span></td>
+                    <td><span class="check">✓</span></td>
+                </tr>
+                <tr>
+                    <td>Priority Support</td>
+                    <td><span class="cross">✗</span></td>
+                    <td><span class="check">✓</span></td>
+                    <td><span class="check">✓</span></td>
+                </tr>
+                <tr>
+                    <td>24/7 Support</td>
+                    <td><span class="cross">✗</span></td>
+                    <td><span class="cross">✗</span></td>
+                    <td><span class="check">✓</span></td>
+                </tr>
+                <tr>
+                    <td>Custom Domain</td>
+                    <td><span class="cross">✗</span></td>
+                    <td><span class="check">✓</span></td>
+                    <td><span class="check">✓</span></td>
+                </tr>
+                <tr>
+                    <td>Analytics</td>
+                    <td><span class="cross">✗</span></td>
+                    <td><span class="check">✓</span></td>
+                    <td><span class="check">✓</span></td>
+                </tr>
+                <tr>
+                    <td>SEO Tools</td>
+                    <td><span class="cross">✗</span></td>
+                    <td><span class="cross">✗</span></td>
+                    <td><span class="check">✓</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-        <div class="faq-section">
-            <div class="faq-section-heading reveal">
-                <h3 class="reveal">FAQ</h3>
-                <h1 class="reveal">Frequently asked questions</h1>
-                <p class="reveal">Everything you need to know about our pricing.</p>
+    <section class="faq-section">
+        <div class="section-header reveal">
+            <div class="section-tag">FAQ</div>
+            <h2 class="section-heading">Frequently asked questions</h2>
+            <p class="section-sub">Everything you need to know about our pricing.</p>
+        </div>
+        <div class="faq-grid">
+            <div class="faq-card reveal">
+                <h3>Can I cancel anytime?</h3>
+                <p>Yes — you can cancel your subscription at any time with no cancellation fees. Your access continues
+                    until the end of your billing period.</p>
             </div>
-            <div class="faq-cards">
-                <div class="faq-card reveal">
-                    <h3>Can I cancel anytime?</h3>
-                    <p>Yes — you can cancel your subscription at any time with no cancellation fees. Your access
-                        continues until the end of your billing period.</p>
-                </div>
-                <div class="faq-card reveal">
-                    <h3>Can I upgrade or downgrade my plan?</h3>
-                    <p>Absolutely. You can upgrade or downgrade your plan at any time. Changes take effect at the start
-                        of your next billing cycle.</p>
-                </div>
-                <div class="faq-card reveal">
-                    <h3>Do you offer refunds?</h3>
-                    <p>Yes — we offer a 30 day money back guarantee. If you are not satisfied, contact us within 30 days
-                        for a full refund.</p>
-                </div>
-                <div class="faq-card reveal">
-                    <h3>What payment methods do you accept?</h3>
-                    <p>We accept all major credit and debit cards including Visa, Mastercard, and American Express. We
-                        also support UPI and net banking.</p>
-                </div>
-                <div class="faq-card reveal">
-                    <h3>Is there a free trial?</h3>
-                    <p>We do not offer a free trial but our 30 day money back guarantee means you can try NovaTech
-                        completely risk free.</p>
-                </div>
-                <div class="faq-card reveal">
-                    <h3>Do you offer custom plans?</h3>
-                    <p>Yes — if none of our plans fit your needs, contact us and we will create a custom plan tailored
-                        to your business requirements.</p>
-                </div>
+            <div class="faq-card reveal">
+                <h3>Can I upgrade or downgrade my plan?</h3>
+                <p>Absolutely. You can upgrade or downgrade your plan at any time. Changes take effect at the start of
+                    your next billing cycle.</p>
+            </div>
+            <div class="faq-card reveal">
+                <h3>Do you offer refunds?</h3>
+                <p>Yes — we offer a 30 day money back guarantee. If you are not satisfied, contact us within 30 days for
+                    a full refund.</p>
+            </div>
+            <div class="faq-card reveal">
+                <h3>What payment methods do you accept?</h3>
+                <p>We accept all major credit and debit cards including Visa, Mastercard, and American Express. We also
+                    support UPI and net banking.</p>
+            </div>
+            <div class="faq-card reveal">
+                <h3>Is there a free trial?</h3>
+                <p>We do not offer a free trial but our 30 day money back guarantee means you can try NovaTech
+                    completely risk free.</p>
+            </div>
+            <div class="faq-card reveal">
+                <h3>Do you offer custom plans?</h3>
+                <p>Yes — if none of our plans fit your needs, contact us and we will create a custom plan tailored to
+                    your business requirements.</p>
             </div>
         </div>
     </section>
     <footer>
-        <div class="footer">
-            <div class="logo-socials">
-                <div id="logo" class="logo-in-footer">Nova<span style="color: blue">Tech</span></div>
-                <div class="socials-in-footer">
-                    <a><i class="fa-brands fa-github"></i></a>
-                    <a><i class="fa-brands fa-twitter"></i></a>
-                    <a><i class="fa-brands fa-linkedin"></i></a>
+        <div class="footer-top">
+            <div>
+                <a class="footer-logo" href="#">Nova<span>Tech</span></a>
+                <p class="footer-tagline">Building digital experiences that drive real growth.</p>
+            </div>
+            <div class="footer-nav-cols">
+                <div>
+                    <div class="footer-col-title">Company</div>
+                    <ul class="footer-col-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="footer-col-title">Legal</div>
+                    <ul class="footer-col-links">
+                        <li><a href="./Policy Pages/policy.html">Privacy Policy</a></li>
+                        <li><a href="./Policy Pages/term.html">Terms of Service</a></li>
+                        <li><a href="./Policy Pages/cookie.html">Cookie Policy</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-        <p class="copyright-text">
-            <a><i class="fa-regular fa-copyright"></i></a>
-            2026 NovaTech. All rights reserved.
-        </p>
-        <div class="policies">
-            <a href="./Policy Pages/policy.html">Privacy Policy</a>
-            &middot;
-            <a href="./Policy Pages/term.html">Terms of service</a>
-            &middot;
-            <a href="./Policy Pages/cookie.html">Cookie Policy</a>
+        <div class="footer-bottom">
+            <p class="footer-copy">© 2026 NovaTech. All rights reserved.</p>
+            <div class="footer-social">
+                <button class="soc-btn"><a><i class="fa-brands fa-github"></i></a></button>
+                <button class="soc-btn"><a><i class="fa-brands fa-twitter"></i></a></button>
+                <button class="soc-btn"><a><i class="fa-brands fa-linkedin"></i></a></button>
+            </div>
         </div>
     </footer>
     <button class="back-to-top">↑</button>
