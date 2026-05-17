@@ -5,6 +5,8 @@ A modern, multi-page business website built with vanilla HTML, CSS, and JavaScri
 ## 🌐 Live Demo
 [View Live Site](https://sadiksaifi9958.github.io/NovaTech/)
 
+![NovaTech](Assets/screenshot.png)
+
 ## ✨ Features
 - Responsive design — works on mobile, tablet and desktop
 - Mobile hamburger menu
