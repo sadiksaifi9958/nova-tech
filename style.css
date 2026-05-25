@@ -2099,6 +2099,47 @@ body.dark {
     background: rgba(125, 160, 255, 0.12);
 }
 
+.cookies-section,
+.terms-section,
+.policy-section{
+    margin-left: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    padding: 100px 5% 60px;
+}
+
+.cookies-section div h2,
+.terms-section div h2,
+.policy-section div h2{
+    font-family: 'Syne', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--ink);
+}
+
+.cookies-section div p,
+.terms-section div p,
+.policy-section div p{
+    font-size: 1rem;
+    color: var(--muted);
+    line-height: 1.65;
+    font-weight: 300;
+}
+
+.cookies-section h1,
+.terms-section h1,
+.policy-section h1{
+    font-family: 'Syne', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.04em;
+    color: var(--ink);
+    margin-bottom: 1.25rem;
+}
+
 @media (max-width: 900px) {
     .hero-content {
         grid-template-columns: 1fr;
